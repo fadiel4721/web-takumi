@@ -1,90 +1,90 @@
-{{-- Navbar desktop --}}
-<nav class="bg-blue-500 text-white">
-    <div class="container flex justify-between items-center py-4 ">
-        <div class="">
-            <h1>Politeknik Takumi</h1>
-        </div>
-        <div class="hidden md:flex">
-            <ul class="flex gap-6">
-                <li><a href="#">Informasi: Students</a></li>
-                <li class="relative" x-data="{ open: false }">
-                    <button @click="open = !open" @click.outside="open = false"
-                        class="focus:outline-none flex items-center">
-                        Staf & Fakultas
-                        <i class='bx bx-chevron-down '></i>
-                    </button>
-                    <div class="absolute right-0 bg-white w-full rounded-md shadow-lg mt-2"
-                        :class="open ? 'block' : 'hidden'">
-                        <ul class="p-2 text-black">
-                            <li class="p-1 font-medium hover:bg-gray-100 rounded">
-                                <a href="" class="block p-1">Halo</a>
-                            </li>
-                            <li class="p-1 font-medium hover:bg-gray-100 rounded">
-                                <a href="" class="block p-1">Halo</a>
-                            </li>
-                            <li class="p-1 font-medium hover:bg-gray-100 rounded">
-                                <a href="" class="block p-1">Halo</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="#">Orang Tua</a></li>
-                <li><a href="#">Pengunjung</a></li>
-                <li><a href="#">Alumni</a></li>
-            </ul>
-        </div>
-        <div class="flex items-center">
-            <input type="search" name="" id=""
-                class="w-24 px-2 py-1 rounded outline outline-primary mr-2" placeholder="Search">
-            <div class="md:hidden">
+<nav id="navbar" x-data="{ isOpen: false }"
+    class="bg-black bg-opacity-40 text-white fixed w-full z-10 transition-all duration-300 ease-in-out">
+    <div  class="container py-5 md:py-3 md:border-b-2 border-[#b2e7f8]">
+        <div class="flex justify-between items-center">
+            <h1 class="text-xl font-semibold">Politeknik Takumi</h1>
+            <div class="hidden md:flex gap-6">
+                <a href="#" class="relative group"><span class="font-bold">Informasi:</span> Mahasiswa <span
+                        class="absolute -top-4 left-1/2 w-0 h-[5px] rounded-b-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span></a>
+                <a href="#" class="relative group">Staff & Fakultas <span
+                        class="absolute -top-4 left-1/2 w-0 h-[5px] rounded-b-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span></a>
+                <a href="#" class="relative group">Orang Tua<span
+                        class="absolute -top-4 left-1/2 w-0 h-[5px] rounded-b-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span></a>
+                <a href="#" class="relative group">Pengunjung <span
+                        class="absolute -top-4 left-1/2 w-0 h-[5px] rounded-b-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span></a>
+                <a href="#" class="relative group">Alumni <span
+                        class="absolute -top-4 left-1/2 w-0 h-[5px] rounded-b-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span></a>
+            </div>
+            <div class="hidden md:flex items-center gap-2">
+                <i class='bx bx-search'></i>
+                <input type="search" placeholder="Search"
+                    class="bg-transparent border-none focus:outline-none placeholder-white w-16"
+                    >
+            </div>
+            <div class="md:hidden" @click="isOpen = !isOpen">
                 <i class='bx bx-menu text-3xl'></i>
             </div>
         </div>
     </div>
 
-    <div class=" bg-gray-100 hover:rounded text-black">
-        <ul class="hidden md:flex gap-6 items-center justify-center py-5">
-            <li><a href="">News</a></li>
-            <li><a href="">Events</a></li>
-            <li><a href="">Akademik</a></li>
-            <li><a href="">Penelitian</a></li>
-            <li><a href="">Campus Life</a></li>
-            <li><a href="">Pendaftaran</a></li>
-            <li><a href="">Profile</a></li>
-        </ul>
-    </div>
-    </div>
-    {{-- Navbar desktop --}}
-
-    {{-- Navbar untuk mobile --}}
-    <div x-data="{ open: false }" class="md:hidden">
-        <div x-show="open" class="bg-blue-500 text-white py-4">
-            <ul class="space-y-4 text-center">
-                <li><a href="#" class="block">Informasi: Students</a></li>
-                <li class="relative" x-data="{ open: false }">
-                    <button @click="open = !open" class="w-full text-left px-4 py-2">
-                        Staf & Fakultas
-                        <i class='bx bx-chevron-down'></i>
-                    </button>
-                    <div x-show="open" class="bg-white text-black p-2">
-                        <ul class="space-y-2">
-                            <li><a href="#" class="block">Halo</a></li>
-                            <li><a href="#" class="block">Halo</a></li>
-                            <li><a href="#" class="block">Halo</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="#" class="block">Orang Tua</a></li>
-                <li><a href="#" class="block">Pengunjung</a></li>
-                <li><a href="#" class="block">Alumni</a></li>
-                <li><a href="#" class="block">News</a></li>
-                <li><a href="#" class="block">Events</a></li>
-                <li><a href="#" class="block">Akademik</a></li>
-                <li><a href="#" class="block">Penelitian</a></li>
-                <li><a href="#" class="block">Campus Life</a></li>
-                <li><a href="#" class="block">Pendaftaran</a></li>
-                <li><a href="#" class="block">Profile</a></li>
+    <div class="md:py-3">
+        <nav class="hidden md:flex justify-center">
+            <ul id="navbar" class="flex justify-center gap-10">
+                <li><a href="" class="relative group">News
+                        <span
+                            class="absolute -bottom-[14px] left-1/2 w-0 h-[5px] rounded-t-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                    </a></li>
+                <li><a href="" class="relative group">Events
+                        <span
+                            class="absolute -bottom-[14px] left-1/2 w-0 h-[5px] rounded-t-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                    </a></li>
+                <li><a href="" class="relative group">Akademik
+                        <span
+                            class="absolute -bottom-[14px] left-1/2 w-0 h-[5px] rounded-t-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                    </a></li>
+                <li><a href="" class="relative group">Penelitian
+                        <span
+                            class="absolute -bottom-[14px] left-1/2 w-0 h-[5px] rounded-t-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                    </a></li>
+                <li><a href="" class="relative group">Campus Life
+                        <span
+                            class="absolute -bottom-[14px] left-1/2 w-0 h-[5px] rounded-t-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                    </a></li>
+                <li><a href="" class="relative group">Pendaftaran
+                        <span
+                            class="absolute -bottom-[14px] left-1/2 w-0 h-[5px] rounded-t-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                    </a></li>
+                <li><a href="" class="relative group">Profile
+                        <span
+                            class="absolute -bottom-[14px] left-1/2 w-0 h-[5px] rounded-t-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                    </a></li>
             </ul>
+        </nav>
+    </div>
+
+    <!-- Navbar Mobile -->
+    <div x-show="isOpen" class="md:hidden bg-white text-black text-lg">
+        <div class="grid grid-cols-2">
+            <div class="flex justify-center items-center p-5 border-b"><a href="#">News</a></div>
+            <div class="flex justify-center items-center p-5 border-b"><a href="#">Events</a></div>
+            <div class="flex justify-center items-center p-5 border-b"><a href="#">Akademik</a></div>
+            <div class="flex justify-center items-center p-5 border-b"><a href="#">Penelitian</a></div>
+            <div class="flex justify-center items-center p-5 border-b"><a href="#">Campus Life</a></div>
+            <div class="flex justify-center items-center p-5 border-b"><a href="#">Pendaftaran</a></div>
+            <div class="flex justify-center items-center p-5 border-b"><a href="#">Profile</a></div>
+        </div>
+        <div class="w-full pt-4">
+            <h1 class="font-bold text-lg text-center">Informasi:</h1>
+            <div class="flex justify-center">
+                <ul class="flex items-center py-5">
+                    <li class="mx-2"><a href="#" class="text-sm">Mahasiswa</a></li>
+                    <li class="mx-2"><a href="#" class="text-sm">Staf & Fakultas</a></li>
+                    <li class="mx-2"><a href="#" class="text-sm">Keluarga</a></li>
+                    <li class="mx-2"><a href="#" class="text-sm">Pengunjung</a></li>
+                    <li class="mx-2"><a href="#" class="text-sm">Alumni</a></li>
+                </ul>
+            </div>
         </div>
     </div>
+    <!-- Navbar Mobile -->
 </nav>

@@ -9,7 +9,7 @@
     <title>Politeknik Takumi</title>
 
     {{-- Alpine JS --}}
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x" defer></script>
 
     {{-- Box Icon --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
@@ -17,6 +17,7 @@
 
     {{-- CSS --}}
     @vite('resources/css/app.css')
+    @vite('resources/css/style.css')
 </head>
 
 <body>
@@ -28,6 +29,10 @@
 
     {{-- Footer --}}
     @include('layouts.footer')
+
+    {{-- JS --}}
+    @vite('resources/js/navbarScroll.js')
+    <script src="//unpkg.com/alpinejs" defer></script>
 </body>
 
 </html>

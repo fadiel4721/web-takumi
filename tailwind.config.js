@@ -11,12 +11,14 @@ export default {
         'poppins': ['Poppins', 'sans-serif'],
       },
       colors: {
-        'primary': '#1f2937',
+        'primary': '#00AEE7',
       },
       container: {
         center: true,
         padding: {
           DEFAULT: '2rem',
+          sm: '2rem',
+          lg: '4rem',
         },
       },
     },

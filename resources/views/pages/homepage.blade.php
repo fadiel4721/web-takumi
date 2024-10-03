@@ -1,158 +1,253 @@
 <main>
-    <div class="">
-        <img src="{{ asset('images/homepage-img.avif') }}" alt="" class="w-full h-screen">
+
+    {{-- Main --}}
+    <div class="bg-gray-500 h-auto"
+        style="background-image: url('{{ asset('images/mahasiswa2.png') }}'); background-size: cover; background-repeat: no-repeat; width: auto">
+        <div class="flex justify-center items-center h-screen">
+            <img src="{{ asset('images/logo-takumi.png') }}" width="500">
+        </div>
+        <div class="w-full bg-black bg-opacity-40 py-5 text-white">
+            <div class="container md:flex justify-between items-center gap-32">
+                <p class="w-1[60%]">Politeknik Takumi mendorong mahasiswa untuk terus mengembangkan diri dan berkompetisi
+                    di tingkat
+                    nasional maupun
+                    internasional. Dengan fasilitas modern dan pengajar yang berkualitas, kami siap mencetak lulusan
+                    yang siap menghadapi
+                    tantangan global. Jadilah bagian dari keluarga besar Takumi dan raih prestasi gemilang."
+                </p>
+                <div class="py-5">
+                    <a href="" class="flex items-center gap-2 px-6 py-2 bg-primary rounded-xl"><i
+                            class='bx bx-user'></i>Pendaftaran</a>
+                </div>
+            </div>
+        </div>
     </div>
+    {{-- Main --}}
+
 
     {{-- Visi & Misi --}}
-    <div class="container mt-12">
-        <h1 class="text-4xl font-semibold border-l-4 border-primary pl-2">Visi & Misi</h1>
-        <div class="mt-4">
-            <h2 class="text-2xl font-semibold">Visi</h2>
-            <p class="text-justify mt-2">
-                Menjadi institusi pendidikan tinggi terkemuka yang menghasilkan lulusan berkompeten dan profesional,
-                yang berkontribusi pada kemajuan teknologi dan masyarakat di tingkat nasional maupun internasional.
+    <div class="mt-20 bg-primary w-full h-auto text-white">
+        <div class="container py-5">
+            <div class="py-5 flex">
+                <span class="w-[15px] h-auto bg-white rounded-r-lg"></span>
+                <div class="flex gap-4">
+                    <h1 class="text-4xl font-bold  ml-5">Visi</h1>
+                    <img src="{{ asset('assets/tangan-ok.png') }}" width="40" alt="">
+                </div>
+            </div>
+            <p class="w-full md:w-2/3 text-lg">
+                Menjadi pusat unggulan dalam menghasilkan lulusan vokasi yang inovatif, kreatif, dan siap berkontribusi
+                dalam pengembangan industri melalui penerapan product based learning by doing.
             </p>
-
-            <h2 class="text-2xl font-semibold mt-4">Misi</h2>
-            <ul class="list-disc list-inside mt-2">
-                <li>Menyelenggarakan pendidikan berkualitas di bidang teknologi dan sains yang sesuai dengan
-                    perkembangan zaman.</li>
-                <li>Mengembangkan penelitian inovatif yang mendukung pengembangan ilmu pengetahuan dan teknologi.</li>
-                <li>Menjalin kerjasama dengan industri dan lembaga pendidikan lainnya untuk meningkatkan kualitas
-                    lulusan.</li>
-                <li>Mengabdi kepada masyarakat dengan memberikan solusi berbasis teknologi.</li>
-            </ul>
+        </div>
+        <div class="container py-5">
+            <div class="py-5 flex justify-end">
+                <div class="flex gap-4">
+                    <img src="{{ asset('assets/tangan-ok.png') }}" width="40" alt="">
+                    <h1 class="text-4xl font-bold mr-5">Visi</h1>
+                </div>
+                <span class="w-[15px] h-auto bg-white rounded-l-lg"></span>
+            </div>
+            <div class="flex justify-end">
+                <p class="w-full md:w-2/3 text-lg ">
+                    Menjadi pusat unggulan dalam menghasilkan lulusan vokasi yang inovatif, kreatif, dan siap
+                    berkontribusi
+                    dalam pengembangan industri melalui penerapan product based learning by doing.
+                </p>
+            </div>
+        </div>
+        <div class="text-center py-10">
+            <a href="#" class="px-8 py-3 outline outline-white rounded-2xl font-semibold    ">Tentang Politeknik
+                Takumi</a>
         </div>
     </div>
     {{-- Visi & Misi --}}
 
-
-    {{-- Campus News --}}
-    <div class="container mt-12">
-        <h1 class="text-4xl font-semibold text-center mb-8">Campus News</h1>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-
-            {{-- News Article 1 --}}
-            <div
-                class="w-full bg-gradient-to-l from-slate-300 to-slate-100 text-slate-600 border border-slate-300 grid grid-col-2 justify-center p-4 gap-4 rounded-lg shadow-md">
-                <div class="col-span-2 text-lg font-bold capitalize rounded-md">
-                    Pendaftaran Mahasiswa Baru 2024
-                </div>
-                <div class="col-span-2 rounded-md">
-                    Using Lorem ipsum to focus attention on graphic elements in a webpage design proposal · One of the
-                    earliest examples
-                    of the Lorem ipsum placeholder text on 1960s advertising...
-                </div>
-                <div class="col-span-1">
-                    <button
-                        class="rounded-md bg-slate-300 hover:bg-slate-600 hover:text-slate-200 duration-300 p-2 flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-external-link">
-                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            <polyline points="15 3 21 3 21 9"></polyline>
-                            <line x1="10" y1="14" x2="21" y2="3"></line>
-                        </svg>
-                        Selengkapnya
-                    </button>
-                </div>
-            </div>
-            {{-- News Article 1 --}}
-
-            {{-- News Article 1 --}}
-            <div
-                class="w-full bg-gradient-to-l from-slate-300 to-slate-100 text-slate-600 border border-slate-300 grid grid-col-2 justify-center p-4 gap-4 rounded-lg shadow-md">
-                <div class="col-span-2 text-lg font-bold capitalize rounded-md">
-                    Pendaftaran Mahasiswa Baru 2024
-                </div>
-                <div class="col-span-2 rounded-md">
-                    Using Lorem ipsum to focus attention on graphic elements in a webpage design proposal · One of the
-                    earliest examples
-                    of the Lorem ipsum placeholder text on 1960s advertising...
-                </div>
-                <div class="col-span-1">
-                    <button
-                        class="rounded-md bg-slate-300 hover:bg-slate-600 hover:text-slate-200 duration-300 p-2 flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-external-link">
-                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            <polyline points="15 3 21 3 21 9"></polyline>
-                            <line x1="10" y1="14" x2="21" y2="3"></line>
-                        </svg>
-                        Selengkapnya
-                    </button>
-                </div>
-            </div>
-            {{-- News Article 1 --}}
-
-            {{-- News Article 1 --}}
-            <div
-                class="w-full bg-gradient-to-l from-slate-300 to-slate-100 text-slate-600 border border-slate-300 grid grid-col-2 justify-center p-4 gap-4 rounded-lg shadow-md">
-                <div class="col-span-2 text-lg font-bold capitalize rounded-md">
-                    Pendaftaran Mahasiswa Baru 2024
-                </div>
-                <div class="col-span-2 rounded-md">
-                    Using Lorem ipsum to focus attention on graphic elements in a webpage design proposal · One of the
-                    earliest examples
-                    of the Lorem ipsum placeholder text on 1960s advertising...
-                </div>
-                <div class="col-span-1">
-                    <button
-                        class="rounded-md bg-slate-300 hover:bg-slate-600 hover:text-slate-200 duration-300 p-2 flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-external-link">
-                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            <polyline points="15 3 21 3 21 9"></polyline>
-                            <line x1="10" y1="14" x2="21" y2="3"></line>
-                        </svg>
-                        Selengkapnya
-                    </button>
-                </div>
-            </div>
-            {{-- News Article 1 --}}
-
+    {{-- Takumi News --}}
+    <div class="mt-10">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold text-primary">Takumi News</h1>
+            <p class="text-lg text-[#A9A9A9]">Berita seputar kampus Politeknik Takumi</p>
         </div>
-        {{-- Campus News --}}
+
+        <div class="container flex gap-10 mt-10">
+            <div
+                class="relative w-[60%] h-[300px]  flex justify-center items-center rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+                <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="w-full h-full object-cover rounded-lg">
+                <div class="absolute left-0 bottom-0 bg-black p-5 w-full rounded-b-lg bg-opacity-40">
+                    <h1 class="text-2xl font-bold text-white">Student Affairs</h1>
+                    <p class="text-white">Tim Robotika Politeknik Takumi Borong Juara di Kompetisi Nasional</p>
+                </div>
+            </div>
+            <div
+                class="relative w-[40%] h-[300px] flex justify-center items-center rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+                <img src="https://images.unsplash.com/photo-1551836022-8b2858c9c69b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="w-full h-full object-cover rounded-lg">
+                <div class="absolute left-0 bottom-0 bg-black p-5 w-full rounded-b-lg bg-opacity-40">
+                    <h1 class="text-2xl font-bold text-white">Cooporation</h1>
+                    <p class="text-white">Politeknik Takumi Jalin Kerjasama dengan Perusahaan Jepang untuk Pengembangan
+                        Kurikulum</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container flex gap-10 mt-10">
+            <div
+                class="relative w-[40%] h-[300px] flex justify-center items-center rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+                <img src="https://plus.unsplash.com/premium_photo-1661761077411-d50cba031848?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="w-full h-full object-cover rounded-lg">
+                <div class="absolute left-0 bottom-0 bg-black p-5 w-full rounded-b-lg bg-opacity-40">
+                    <h1 class="text-2xl font-bold text-white">Research</h1>
+                    <p class="text-white">Peneliti Takumi Temukan Inovasi Baru dalam Bidang Energi Terbarukan</p>
+                </div>
+            </div>
+            <div
+                class="relative w-[60%] h-[300px]  flex justify-center items-center rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+                <img src="https://images.unsplash.com/photo-1638037099058-4674316b9bc4?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="w-full h-full object-cover rounded-lg">
+                <div class="absolute left-0 bottom-0 bg-black p-5 w-full rounded-b-lg bg-opacity-40">
+                    <h1 class="text-2xl font-bold text-white">Campus life</h1>
+                    <p class="text-white">Politeknik Takumi Gelar Dies Natalis ke- 3 dengan Berbagai Kegiatan Menarik
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-10">
+            <a href="" class="px-8 py-3 outline bg-primary text-white rounded-2xl font-semibold">Selengkapnya
+                Takumi News</a>
+        </div>
+
     </div>
+    </div>
+    {{-- Takumi News --}}
 
     {{-- Akademik --}}
-    <div class="container mt-16">
-        <div class="text-center mb-5">
-            <h1 class="text-4xl font-semibold ">Akademik</h1>
-            <p class="">4 Program Studi untuk mengejar passion career anda</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <div class="w-full bg-red-300 rounded h-[300px]">
+    <div class="mt-10 w-full h-auto bg-primary">
+        <div class="text-center ">
+            <div class="py-5">
+                <h1 class="text-4xl font-bold text-white">Akademik</h1>
+                <p class="text-lg text-white">4 Program studi mengejar passion career anda</p>
             </div>
-            <div class="w-full bg-red-300 rounded h-[300px]"></div>
-            <div class="w-full bg-red-300 rounded h-[300px]"></div>
-            <div class="w-full bg-red-300 rounded h-[300px]"></div>
+        </div>
+        <div class="container py-5">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <!-- Card 1 -->
+                <div
+                    class="w-full h-[400px] bg-white rounded-lg p-5 relative overflow-hidden flex flex-col justify-between">
+                    <div class="">
+                        <div class="flex justify-between items-center">
+                            <h1 class="font-semibold text-primary text-xl">Teknologi Informasi</h1>
+                            <a href="#">
+                                <img src="{{ asset('assets/ButtonFlip.svg') }}" alt="">
+                            </a>
+                        </div>
+                        <p class="text-primary">Politeknik Takumi</p>
+                    </div>
+                    <div class="absolute -bottom-10 -right-10">
+                        <img src="{{ asset('assets/TI.svg') }}" class="-rotate-[30deg]">
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="w-full h-[400px] bg-white rounded-lg p-5 relative overflow-hidden flex flex-col justify-between">
+                    <div class="">
+                        <div class="flex justify-between items-center">
+                            <h1 class="font-semibold text-primary text-xl">Mekatronika</h1>
+                            <a href="#">
+                                <img src="{{ asset('assets/ButtonFlip.svg') }}" alt="">
+                            </a>
+                        </div>
+                        <p class="text-primary">Politeknik Takumi</p>
+                    </div>
+                    <div class="absolute -bottom-10 -right-10">
+                        <img src="{{ asset('assets/Mekatronika.svg') }}" class="-rotate-[10deg]">
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="w-full h-[400px] bg-white rounded-lg p-5 relative overflow-hidden flex flex-col justify-between">
+                    <div class="">
+                        <div class="flex justify-between items-center">
+                            <h1 class="font-semibold text-primary text-xl">Bisnis Digital</h1>
+                            <a href="#">
+                                <img src="{{ asset('assets/ButtonFlip.svg') }}" alt="">
+                            </a>
+                        </div>
+                        <p class="text-primary">Politeknik Takumi</p>
+                    </div>
+                    <div class="absolute -bottom-10 -right-10">
+                        <img src="{{ asset('assets/Bisnis-Digital.svg') }}" class="-rotate-[30deg]">
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                    class="w-full h-[400px] bg-white rounded-lg p-5 relative overflow-hidden flex flex-col justify-between">
+                    <div class="">
+                        <div class="flex justify-between items-center">
+                            <h1 class="font-semibold text-primary text-xl">Bahasa Jepang</h1>
+                            <a href="#">
+                                <img src="{{ asset('assets/ButtonFlip.svg') }}" alt="">
+                            </a>
+                        </div>
+                        <p class="text-primary">Politeknik Takumi</p>
+                    </div>
+                    <div class="absolute -bottom-20 -right-14">
+                        <img src="{{ asset('assets/Bahasa-Jepang.svg') }}" class="">
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
     {{-- Akademik --}}
 
-    {{-- Penelitian --}}
-    <div class="container mt-16">
-        <div class="mb-5 text-center">
-            <h1 class="text-4xl font-semibold ">Penelitian</h1>
+    {{-- Staff & Lecturer --}}
+    <div class="container mt-10">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold text-primary">Staff & Lecturer</h1>
+            <p class="text-lg text-[#A9A9A9]">Profil of the month</p>
         </div>
-    </div>
-    {{-- Penelitian --}}
-
-    {{-- Upcomming Events --}}
-    <div class="container mt-16 mb-11">
-        <div class="mb-5 text-center">
-            <h1 class="text-4xl font-semibold ">Upcomming Events</h1>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="w-full h-[200px] bg-gray-300 ">
+        <div class="mt-10">
+            <div class="flex gap-6 w-[1000px] mx-auto h-96">
+                <div class="group relative">
+                    <img src="https://images.unsplash.com/photo-1726756882806-cad5dcac46f2?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Dosen Prodi Teknologi Informasi"
+                        class="rounded-xl cursor-pointer transition-transform duration-300 group-hover:translate-x-0 group-hover:translate-y-2 group-hover:scale-105">
+                    <div class="text-center mt-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-primary">Dosen Prodi Teknologi Informasi</p>
+                        <h1 class="text-xl font-semibold text-primary">Nama Dosen</h1>
+                    </div>
+                </div>
+                <div class="group relative">
+                    <img src="https://images.unsplash.com/photo-1726756882806-cad5dcac46f2?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Dosen Prodi Teknologi Informasi"
+                        class="rounded-xl cursor-pointer transition-transform duration-300 group-hover:translate-x-0 group-hover:translate-y-2 group-hover:scale-105">
+                    <div class="text-center mt-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-primary">Dosen Prodi Teknologi Informasi</p>
+                        <h1 class="text-xl font-semibold text-primary">Nama Dosen</h1>
+                    </div>
+                </div>
+                <div class="group relative">
+                    <img src="https://images.unsplash.com/photo-1726756882806-cad5dcac46f2?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Dosen Prodi Teknologi Informasi"
+                        class="rounded-xl cursor-pointer transition-transform duration-300 group-hover:translate-x-0 group-hover:translate-y-2 group-hover:scale-105">
+                    <div class="text-center mt-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-primary">Dosen Prodi Teknologi Informasi</p>
+                        <h1 class="text-xl font-semibold text-primary">Nama Dosen</h1>
+                    </div>
+                </div>
             </div>
-            <div class="w-full h-[200px] bg-gray-300"></div>
-            <div class="w-full h-[200px] bg-gray-300"></div>
+            <div class="text-center mt-36">
+                <a href="#"
+                    class="px-8 py-3 outline bg-primary text-white rounded-2xl font-semibold">Selengkapnya</a>
+            </div>
         </div>
     </div>
-    {{-- Upcomming Events --}}
+    {{-- Staff & Lecturer --}}
+
 
 </main>
