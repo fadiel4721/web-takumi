@@ -1,6 +1,6 @@
 <nav id="navbar" x-data="{ isOpen: false }"
     class="bg-black bg-opacity-40 text-white fixed w-full z-10 transition-all duration-300 ease-in-out">
-    <div  class="container py-5 md:py-3 md:border-b-2 border-[#b2e7f8]">
+    <div class="container py-5 md:py-3 md:border-b-2 border-[#b2e7f8]">
         <div class="flex justify-between items-center">
             <h1 class="text-xl font-semibold">Politeknik Takumi</h1>
             <div class="hidden md:flex gap-6">
@@ -15,11 +15,23 @@
                 <a href="#" class="relative group">Alumni <span
                         class="absolute -top-4 left-1/2 w-0 h-[5px] rounded-b-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span></a>
             </div>
-            <div class="hidden md:flex items-center gap-2">
-                <i class='bx bx-search'></i>
-                <input type="search" placeholder="Search"
-                    class="bg-transparent border-none focus:outline-none placeholder-white w-16"
-                    >
+            <!-- Search Button -->
+            <a href="javascript:void(0)" id="search-btn" class="hidden md:flex items-center gap-2">
+                <i class='bx bx-search'></i> Search
+            </a>
+            <!-- Modal (hidden by default) -->
+            <div id="search-modal"
+                class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50 hidden ">
+                <div class=" p-6 rounded-lg w-[500px]">
+                    <div class="flex justify-center items-center mb-4">
+                        <h2 class="text-xl font-bold">Search</h2>
+                        <button id="close-modal" class="hidden text-gray-600 hover:text-gray-900">
+                            <i class='bx bx-x text-2xl'></i>
+                        </button>
+                    </div>
+                    <input type="text" name="search" id="search-input" placeholder="Type to search..."
+                        class="w-full p-2 rounded-lg">
+                </div>
             </div>
             <div class="md:hidden" @click="isOpen = !isOpen">
                 <i class='bx bx-menu text-3xl'></i>

@@ -8,10 +8,24 @@ window.addEventListener('scroll', function() {
     }
 });
 
-document.querySelectorAll('.flip-btn').forEach(button => {
-    button.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetCard = this.closest('.flip-card-inner');
-        targetCard.classList.toggle('rotate-y-180');
+// Search
+const searchBtn = document.getElementById('search-btn');
+    const searchModal = document.getElementById('search-modal');
+    const closeModal = document.getElementById('close-modal');
+
+    // Open modal on search button click
+    searchBtn.addEventListener('click', function() {
+        searchModal.classList.remove('hidden');
     });
-});
+
+    // Close modal on close button click
+    closeModal.addEventListener('click', function() {
+        searchModal.classList.add('hidden');
+    });
+
+    // Close modal when clicking outside the modal content
+    window.addEventListener('click', function(event) {
+        if (event.target === searchModal) {
+            searchModal.classList.add('hidden');
+        }
+    });
