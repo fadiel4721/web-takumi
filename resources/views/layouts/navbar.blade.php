@@ -24,13 +24,19 @@
                 class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50 hidden ">
                 <div class=" p-6 rounded-lg w-[500px]">
                     <div class="flex justify-center items-center mb-4">
-                        <h2 class="text-xl font-bold">@lang('common.search')</h2>
+                        <h2 class="text-xl font-bold">@lang('common.search') Takumi: </h2>
                         <button id="close-modal" class="hidden text-gray-600 hover:text-gray-900">
                             <i class='bx bx-x text-2xl'></i>
                         </button>
                     </div>
-                    <input type="text" name="search" id="search-input" placeholder="Type to search..."
-                        class="w-full p-2 rounded-lg">
+                    <input type="text" name="search" id="search-input" placeholder="Search Takumi Website..."
+                    class="w-full p-2 rounded-lg">
+                    <div class="flex justify-center items-center mt-4">
+                        <h2 class="text-xl font-bold">Other Ways To Search: <a href="https://maps.app.goo.gl/YoeetP6uq4ftJxRE9" target="_blank" class="underline font-medium">Maps</a></h2>
+                        <button id="close-modal" class="hidden text-gray-600 hover:text-gray-900">
+                            <i class='bx bx-x text-2xl'></i>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="md:hidden" @click="isOpen = !isOpen">

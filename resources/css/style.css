@@ -1,40 +1,41 @@
+/* Navbar bagian atas setelah di-scroll */
 .navbar-scroll {
-    background-color: #00AEE7; 
-    transition: background-color 0.3s ease-in-out; 
+    background-color: #00AEE7; /* Warna primary */
+    transition: background-color 0.3s ease-in-out;
 }
 
-.perspective {
-    perspective: 1000px;
+/* Navbar bagian bawah setelah di-scroll */
+.navbar2-scroll {
+    background-color: white; /* Background putih */
+    color: #00AEE7; /* Text warna primary */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.8s;
+/* Aturan tambahan untuk link di navbar bagian bawah */
+.navbar2-scroll a {
+    color: #00AEE7; /* Text warna primary */
+}
+
+.flip-card {
+    perspective: 800px;
+  }
+
+  .flip-card-inner {
     transform-style: preserve-3d;
-}
+    transition: transform .5s;
+  }
 
-.flip-card-front,
-.flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 1rem;
-}
-
-.flip-card-back {
+  .flip-card:hover .flip-card-inner {
+    cursor: pointer;
     transform: rotateY(180deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+  }
 
-.group-hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
-.backface-hidden {
+  .flip-card-front,
+  .flip-card-back {
     backface-visibility: hidden;
-}
+  }
+
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
