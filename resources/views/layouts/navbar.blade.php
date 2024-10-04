@@ -1,6 +1,6 @@
-<nav id="navbar" x-data="{ isOpen: false }"
+<nav  x-data="{ isOpen: false }"
     class="bg-black bg-opacity-40 text-white fixed w-full z-10 transition-all duration-300 ease-in-out">
-    <div class="container py-5 md:py-3 md:border-b-2 border-[#b2e7f8]">
+    <div id="navbar" class="container py-5 md:py-3 md:border-b-2 border-[#b2e7f8]">
         <div class="flex justify-between items-center">
             <h1 class="text-xl font-semibold">Politeknik Takumi</h1>
             <div class="hidden md:flex gap-6">
@@ -24,13 +24,19 @@
                 class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50 hidden ">
                 <div class=" p-6 rounded-lg w-[500px]">
                     <div class="flex justify-center items-center mb-4">
-                        <h2 class="text-xl font-bold">Search</h2>
+                        <h2 class="text-xl font-bold">Search Takumi: </h2>
                         <button id="close-modal" class="hidden text-gray-600 hover:text-gray-900">
                             <i class='bx bx-x text-2xl'></i>
                         </button>
                     </div>
-                    <input type="text" name="search" id="search-input" placeholder="Type to search..."
-                        class="w-full p-2 rounded-lg">
+                    <input type="text" name="search" id="search-input" placeholder="Search Takumi Website..."
+                    class="w-full p-2 rounded-lg">
+                    <div class="flex justify-center items-center mt-4">
+                        <h2 class="text-xl font-bold">Other Ways To Search: <a href="https://maps.app.goo.gl/YoeetP6uq4ftJxRE9" target="_blank" class="underline font-medium">Maps</a></h2>
+                        <button id="close-modal" class="hidden text-gray-600 hover:text-gray-900">
+                            <i class='bx bx-x text-2xl'></i>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="md:hidden" @click="isOpen = !isOpen">
@@ -39,36 +45,36 @@
         </div>
     </div>
 
-    <div class="md:py-3">
+    <div id="navbar2" class="md:py-3">
         <nav class="hidden md:flex justify-center">
             <ul id="navbar" class="flex justify-center gap-10">
                 <li><a href="" class="relative group">News
                         <span
-                            class="absolute -bottom-[14px] left-1/2 w-0 h-[5px] rounded-t-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                            class="absolute -bottom-[14px] left-1/2 w-0 h-[5px] rounded-t-lg bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                     </a></li>
                 <li><a href="" class="relative group">Events
                         <span
-                            class="absolute -bottom-[14px] left-1/2 w-0 h-[5px] rounded-t-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                            class="absolute -bottom-[14px] left-1/2 w-0 h-[5px] rounded-t-lg bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                     </a></li>
                 <li><a href="" class="relative group">Akademik
                         <span
-                            class="absolute -bottom-[14px] left-1/2 w-0 h-[5px] rounded-t-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                            class="absolute -bottom-[14px] left-1/2 w-0 h-[5px] rounded-t-lg bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                     </a></li>
                 <li><a href="" class="relative group">Penelitian
                         <span
-                            class="absolute -bottom-[14px] left-1/2 w-0 h-[5px] rounded-t-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                            class="absolute -bottom-[14px] left-1/2 w-0 h-[5px] rounded-t-lg bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                     </a></li>
                 <li><a href="" class="relative group">Campus Life
                         <span
-                            class="absolute -bottom-[14px] left-1/2 w-0 h-[5px] rounded-t-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                            class="absolute -bottom-[14px] left-1/2 w-0 h-[5px] rounded-t-lg bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                     </a></li>
                 <li><a href="" class="relative group">Pendaftaran
                         <span
-                            class="absolute -bottom-[14px] left-1/2 w-0 h-[5px] rounded-t-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                            class="absolute -bottom-[14px] left-1/2 w-0 h-[5px] rounded-t-lg bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                     </a></li>
                 <li><a href="" class="relative group">Profile
                         <span
-                            class="absolute -bottom-[14px] left-1/2 w-0 h-[5px] rounded-t-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                            class="absolute -bottom-[14px] left-1/2 w-0 h-[5px] rounded-t-lg bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                     </a></li>
             </ul>
         </nav>
