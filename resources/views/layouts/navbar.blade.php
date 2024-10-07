@@ -1,7 +1,7 @@
-<nav id="navbar" x-data="{ isOpen: false }"
-    class="bg-black bg-opacity-40 text-white fixed w-full z-10 transition-all duration-300 ease-in-out">
-    <div class="container py-5 md:py-3 md:border-b-2 border-[#b2e7f8]">
-        <div class="flex justify-between items-center">
+<nav x-data="{ isOpen: false }" class="">
+    <div id="navbar"
+        class=" bg-black bg-opacity-40 text-white fixed w-full z-10 transition-all duration-300 ease-in-out">
+        <div class="container flex justify-between items-center py-3 border-b-2 border-[#59CAEF]">
             <h1 class="text-xl font-semibold">Politeknik Takumi</h1>
             <div class="hidden md:flex gap-6">
                 <a href="#" class="relative group"><span class="font-bold">@lang('common.informasi'):</span> @lang('common.mahasiswa') <span
@@ -42,6 +42,40 @@
             <div class="md:hidden" @click="isOpen = !isOpen">
                 <i class='bx bx-menu text-3xl'></i>
             </div>
+        </div>
+        <div id="navbar2" class="md:py-3">
+            <nav class="hidden md:flex justify-center">
+                <ul id="navbar" class="flex justify-center gap-10">
+                    <li><a href="" class="relative group">News
+                            <span
+                                class="absolute -bottom-[14px] left-1/2 w-0 h-[5px] rounded-t-lg bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                        </a></li>
+                    <li><a href="" class="relative group">Events
+                            <span
+                                class="absolute -bottom-[14px] left-1/2 w-0 h-[5px] rounded-t-lg bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                        </a></li>
+                    <li><a href="" class="relative group">Akademik
+                            <span
+                                class="absolute -bottom-[14px] left-1/2 w-0 h-[5px] rounded-t-lg bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                        </a></li>
+                    <li><a href="" class="relative group">Penelitian
+                            <span
+                                class="absolute -bottom-[14px] left-1/2 w-0 h-[5px] rounded-t-lg bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                        </a></li>
+                    <li><a href="" class="relative group">Campus Life
+                            <span
+                                class="absolute -bottom-[14px] left-1/2 w-0 h-[5px] rounded-t-lg bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                        </a></li>
+                    <li><a href="" class="relative group">Pendaftaran
+                            <span
+                                class="absolute -bottom-[14px] left-1/2 w-0 h-[5px] rounded-t-lg bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                        </a></li>
+                    <li><a href="" class="relative group">Profile
+                            <span
+                                class="absolute -bottom-[14px] left-1/2 w-0 h-[5px] rounded-t-lg bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                        </a></li>
+                </ul>
+            </nav>
         </div>
     </div>
 
@@ -93,7 +127,7 @@
         </div>
 
     <!-- Navbar Mobile -->
-    <div x-show="isOpen" class="md:hidden bg-white text-black text-lg">
+    <div x-show="isOpen" class="md:hidden bg-white text-black text-lg fixed z-10 mt-16">
         <div class="grid grid-cols-2">
             <div class="flex justify-center items-center p-5 border-b"><a href="#">@lang('common.news')</a></div>
             <div class="flex justify-center items-center p-5 border-b"><a href="#">@lang('common.event')</a></div>
@@ -114,6 +148,31 @@
                     <li class="mx-2"><a href="#" class="text-sm">@lang('common.alumni')</a></li>
         
                 </ul>
+            </div>
+            <a href="javascript:void(0)" id="search-btn" class="hidden md:flex items-center gap-2">
+                <i class='bx bx-search'></i> Search
+            </a>
+            <!-- Modal (hidden by default) -->
+            <div id="search-modal"
+                class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50 hidden ">
+                <div class=" p-6 rounded-lg w-[500px]">
+                    <div class="flex justify-center items-center mb-4">
+                        <h2 class="text-xl font-bold">@lang('common.search') Takumi: </h2>
+                        <button id="close-modal" class="hidden text-gray-600 hover:text-gray-900">
+                            <i class='bx bx-x text-2xl'></i>
+                        </button>
+                    </div>
+                    <input type="text" name="search" id="search-input" placeholder="Search Takumi Website..."
+                        class="w-full p-2 rounded-lg">
+                    <div class="flex justify-center items-center mt-4">
+                        <h2 class="text-xl font-bold">@lang('common.hackathon22') <a
+                                href="https://maps.app.goo.gl/YoeetP6uq4ftJxRE9" target="_blank" class="underline">@lang('common.hackathon23')</a>
+                        </h2>
+                        <button id="close-modal" class="hidden text-gray-600 hover:text-gray-900">
+                            <i class='bx bx-x text-2xl'></i>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
