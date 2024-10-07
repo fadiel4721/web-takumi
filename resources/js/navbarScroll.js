@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-// Navbar Scroll
-window.addEventListener('scroll', function() {
-    const navbar = document.getElementById('navbar');
-    if (window.scrollY > 10) {
-        navbar.classList.add('navbar-scroll');
-    } else {
-        navbar.classList.remove('navbar-scroll');
-    }
-});
-
-=======
 // Navbar Scroll untuk bagian atas dan bawah
 window.addEventListener('scroll', function() {
     const navbar = document.getElementById('navbar'); // Navbar bagian atas
@@ -25,7 +13,6 @@ window.addEventListener('scroll', function() {
 });
 
 
->>>>>>> 3329e03a15b2548d76d69f64f06608165c5fad60
 // Search
 const searchBtn = document.getElementById('search-btn');
     const searchModal = document.getElementById('search-modal');
@@ -46,9 +33,6 @@ const searchBtn = document.getElementById('search-btn');
         if (event.target === searchModal) {
             searchModal.classList.add('hidden');
         }
-<<<<<<< HEAD
-    });
-=======
     });
 
 // 
@@ -56,4 +40,3 @@ document.getElementById('flipButton').addEventListener('click', function(e) {
     e.preventDefault();
     document.getElementById('flipCard').classList.toggle('flipped');
 });
->>>>>>> 3329e03a15b2548d76d69f64f06608165c5fad60

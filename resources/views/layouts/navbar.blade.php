@@ -29,10 +29,10 @@
                             <i class='bx bx-x text-2xl'></i>
                         </button>
                     </div>
-                    <input type="text" name="search" id="search-input" placeholder="Search Takumi Website..."
+                    <input type="text" name="search" id="search-input" placeholder="@lang('common.hackathon24')"
                     class="w-full p-2 rounded-lg">
                     <div class="flex justify-center items-center mt-4">
-                        <h2 class="text-xl font-bold">Other Ways To Search: <a href="https://maps.app.goo.gl/YoeetP6uq4ftJxRE9" target="_blank" class="underline font-medium">Maps</a></h2>
+                        <h2 class="text-xl font-bold">@lang('common.hackathon22') <a href="https://maps.app.goo.gl/YoeetP6uq4ftJxRE9" target="_blank" class="underline font-medium">@lang('common.hackathon23')</a></h2>
                         <button id="close-modal" class="hidden text-gray-600 hover:text-gray-900">
                             <i class='bx bx-x text-2xl'></i>
                         </button>
