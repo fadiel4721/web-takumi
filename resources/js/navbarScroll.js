@@ -3,7 +3,7 @@ window.addEventListener('scroll', function() {
     const navbar = document.getElementById('navbar'); // Navbar bagian atas
     const navbar2 = document.getElementById('navbar2'); // Navbar bagian bawah
 
-    if (window.scrollY > 10) {
+    if (window.scrollY > 5) {
         navbar.classList.add('navbar-scroll'); // Menambah kelas saat scroll
         navbar2.classList.add('navbar2-scroll'); // Menambah kelas saat scroll untuk navbar bawah
     } else {
