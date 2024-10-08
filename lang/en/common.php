@@ -20,7 +20,9 @@ return [
     'visi' => 'Vision',
     'menjadi' => 'Becoming a center of excellence in producing vocational graduates who are innovative, creative, and ready to contribute to the development of industries through the application of product-based learning by doing',
     'misi' => 'Mission',
-    'Misi' => 'Providing vocational education oriented towards practice, encouraging students to create real products with added value. Cultivating a spirit of innovation and entrepreneurship among students.',
+    'Misi1' => '1. Organize vocational higher education with a Product-Based Learning by Doing (PBLD) model that is excellent, with integrity, and adaptive to the workforce needs of businesses, industries, and entrepreneurship in both national and international contexts.',
+    'Misi2' => '2. Conduct research and community service that focuses on knowledge, technology, and business while considering environmental balance.',
+    'Misi3' => '3. Establish collaborations with various institutions domestically and internationally for the development of vocational higher education that is industry-oriented.',
     'tentangpolitekniktakumi' => 'About Takumi Polytechnic',
     'takuminews' => 'Takumi News',
     'beritaseputarpolitekniktakumi' => 'News on the campus of Takumi Polytechnic',
@@ -84,4 +86,5 @@ return [
     'hackathon22' => 'Other Ways To Search:',
     'hackathon23' => 'Maps',
     'hackathon24' => 'Search Takumi Website...',
+    'ppmb' => 'New Student Enrollment',
 ];

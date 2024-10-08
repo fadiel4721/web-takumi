@@ -1,6 +1,6 @@
 <footer class="">
     <div class="container md:px-36 py-10">
-        <div class="grid grid-cols-2 md:grid-cols-5 gap-5">
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-5">
             <div class="">
                 <h1 class="font-bold text-primary text-lg mb-2">Program Studi</h1>
                 <a href="">
@@ -70,36 +70,67 @@
         </div>
     </div>
     <div class="w-full bg-primary h-auto text-white">
-        <div class="container md:px-36 py-10">
-            <div class="flex flex-col md:flex-row justify-between">
-                <!-- Logo Section -->
-                <div class="flex justify-center md:justify-start mb-5 md:mb-0">
-                    <img src="{{ asset('images/logo-takumi.png') }}" width="200">
-                </div>
-                <!-- Links Section -->
-                <div class="font-semibold text-center md:text-left">
-                    <!-- Main Links -->
-                    <div class="mb-5 md:mb-0">
-                        <a href="" class="block md:inline-block px-5 md:px-10">Takumi Home</a>
-                        <a href="" class="block md:inline-block px-5 md:px-10">Maps & Direction</a>
-                        <a href="" class="block md:inline-block px-5 md:px-10">Search Takumi</a>
-                        <a href="" class="block md:inline-block px-5 md:px-10">Emergency Info</a>
-                    </div>
-                    <!-- Secondary Links -->
-                    <div class="font-medium mt-5 md:ml-5">
-                        <a href="" class="block md:inline-block px-5">Terms Of Use</a>
-                        <a href="" class="block md:inline-block px-5">Privacy</a>
-                        <a href="" class="block md:inline-block px-5">Copyright</a>
-                        <a href="" class="block md:inline-block px-5">Trademarks</a>
-                        <a href="" class="block md:inline-block px-5">Non discrimination</a>
-                        <a href="" class="block md:inline-block px-5">Accesibility</a>
-                    </div>
-                    <!-- Address -->
-                    <div class="mt-5 md:ml-5 text-center">
-                        <p class="font-semibold">&copy; Takumi Polytechnic, Jawa Barat, Cikarang 18818</p>
-                    </div>
-                </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 px-20 py-10 gap-6">
+            <div class="">
+                <img src="{{ asset('images/logo-takumi.png') }}" alt="" class="w-52">
             </div>
+            <div class="flex">
+                <ul>
+                    <li>
+                        <a href="" class="font-semibold hover:underline text-xl">Takumi Home</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-sm hover:underline">Maps & Direction</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-sm hover:underline">Search Takumi</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-sm hover:underline">Emergency Info</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex">
+                <ul>
+                    <li>
+                        <a href="" class="font-semibold hover:underline text-xl">Terms of Use</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-sm hover:underline">Privacy</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-sm hover:underline">Copyright</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-sm hover:underline">Trademarks</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-sm hover:underline">Non Discrimination</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-sm hover:underline">Accesbility</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex">
+                <ul>
+                    <li>
+                        <a href="" class="font-semibold hover:underline text-xl">Sosial Media</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-sm hover:underline">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-sm hover:underline">Youtube</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-sm hover:underline">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center py-2 bg-[#40c2ed]">
+            <p>Copyright © 2022. All Rights Reserved</p>
         </div>
     </div>
     

@@ -20,7 +20,13 @@ return [
     'visi' => 'Visi',
     'menjadi' => ' Menjadi pusat unggulan dalam menghasilkan lulusan vokasi yang inovatif, kreatif, dan siap berkontribusi dalam pengembangan industri melalui penerapan product based learning by doing.',
     'misi' => 'Misi',
-    'Misi' => 'Menyelenggarakan pendidikan vokasi yang berorientasi pada praktik, mendorong mahasiswa untuk menciptakan produk nyata yang bernilai tambah.Membudayakan semangat inovasi dan kewirausahaan di kalangan mahasiswa',
+    'Misi1' => '1. Menyelenggarakan pendidikan tinggi vokasi dengan model pembelajaran product Based - Learning
+                        by Doing (PBLD) yang unggul, ber-integritas dan adaptif terhadap kebutuhan tenaga kerja dunia
+                        usaha, industri dan kewirausahaan dalam lingkup nasional maupun internasional',
+    'Misi2' =>' 2. Menyelenggarakan penelitian dan pengabdian kepada masyarakat yang berorientasi pada ilmu
+                        pengetahuan, teknologi, dan bisnis yang memperhatiakan keseimbangan lingkungan',
+    'Misi3' => '3. Menyelenggarakan kerja sama dengan berbagai institusi dalam dan luat negeri untuk
+                        perkembangan pendidikan tinggi vokasi yang berorientasi industri',
     'tentangpolitekniktakumi' => 'Tentang Politeknik Takumi',
     'takuminews' => 'Berita Takumi',
     'beritaseputarpolitekniktakumi' => 'Berita seputar kampus Politeknik Takumi',
@@ -84,4 +90,5 @@ return [
     'hackathon22' => 'Cara Lain untuk Mencari:',
     'hackathon23' => 'Peta',
     'hackathon24' => 'Cari Website Takumi...',
+    'ppmb' => 'Pendaftaran Mahasiswa Baru',
 ];

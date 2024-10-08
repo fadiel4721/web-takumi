@@ -1,18 +1,69 @@
 <main>
     {{-- Main --}}
-    <div class="bg-gray-500 h-auto"
-        style="background-image: url('{{ asset('images/mahasiswa2.png') }}'); background-size: cover; background-repeat: no-repeat; width: auto">
-        <div class="flex justify-center items-center h-screen">
-            <img src="{{ asset('images/logo-takumi.png') }}" width="500">
+    <div class="relative bg-gray-500 h-screen">
+        <!-- Background image -->
+        <div class="absolute inset-0">
+            <img src="{{ asset('images/mahasiswa2.png') }}" alt="" class="w-full h-full object-cover">
         </div>
-        <div class="w-full bg-black bg-opacity-40 py-5 text-white">
-            <div class="container mx-auto md:flex justify-between items-center gap-10">
-                <p class="md:w-3/5">@lang('common.poltek')
-                </p>
-                <div class="py-5 md:py-0">
 
-                    <a href="" class="flex items-center px-6 py-2 bg-primary rounded-xl"><i
-                            class='bx bx-user'></i>@lang('common.pendaftaran')</a>
+        <!-- Logo Takumi -->
+        <div class="absolute inset-0 flex flex-col justify-center items-center gap-8">
+            <!-- Logo Takumi -->
+            <img src="{{ asset('images/logo-takumi.png') }}" class="w-64 md:w-80">
+
+            <!-- Tombol Pendaftaran PPMB -->
+            <button
+                class="hidden md:inline-block text-white text-lg outline-none border-none cursor-pointer font-medium
+                bg-gradient-to-br from-[#00AEE7] to-[#5468FF] shadow-[0_0.01em_0.01em_rgba(45,35,66,0.4),0_0.3em_0.7em_-0.01em_rgba(45,35,66,0.3),inset_0_-0.01em_0_rgba(58,65,111,0.5)] 
+                px-8 h-[2.6em] rounded-md transition-transform duration-150 ease-linear">
+                @lang('common.ppmb')
+            </button>
+
+            <style>
+                button:hover {
+                    box-shadow: 0px 0.1em 0.2em rgba(45, 35, 66, 0.4),
+                        0px 0.4em 0.7em -0.1em rgba(45, 35, 66, 0.3),
+                        inset 0px -0.1em 0px #3c4fe0;
+                    transform: translateY(-0.1em);
+                }
+
+                button:active {
+                    box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+                    transform: translateY(0em);
+                }
+            </style>
+        </div>
+
+        <!-- Text content -->
+        <div class="absolute bottom-0 w-full bg-black bg-opacity-40 py-5 text-white">
+            <div class=" mx-auto md:flex justify-between items-center gap-10">
+                <p class="container md:text-left text-sm md:text-base md:w-full text-justify">
+                   @lang('common.poltek')
+                </p>
+
+                <!-- Mobile button for registration -->
+                <div class="md:hidden flex justify-center py-5 md:py-0">
+                    <button
+                        class="inline-block text-white text-lg outline-none border-none cursor-pointer font-medium
+           bg-gradient-to-br from-[#00AEE7] to-[#5468FF] shadow-[0_0.01em_0.01em_rgba(45,35,66,0.4),0_0.3em_0.7em_-0.01em_rgba(45,35,66,0.3),inset_0_-0.01em_0_rgba(58,65,111,0.5)] 
+           px-8 h-[2.6em] rounded-md transition-transform duration-150 ease-linear">
+                        @lang('common.ppmb')
+                    </button>
+
+                    <style>
+                        button:hover {
+                            box-shadow: 0px 0.1em 0.2em rgba(45, 35, 66, 0.4),
+                                0px 0.4em 0.7em -0.1em rgba(45, 35, 66, 0.3),
+                                inset 0px -0.1em 0px #3c4fe0;
+                            transform: translateY(-0.1em);
+                        }
+
+                        button:active {
+                            box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+                            transform: translateY(0em);
+                        }
+                    </style>
+
                 </div>
             </div>
         </div>
@@ -55,6 +106,9 @@
                     </li>
                     <li>
                        @lang('common.Misi2')
+                    </li>
+                    <li>
+                      @lang('common.Misi3')
                     </li>
                 </ul>
                 </p>

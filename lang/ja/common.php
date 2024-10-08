@@ -20,7 +20,9 @@ return [
     'visi' => 'ビジョン',
     'menjadi' => '製品ベースの実践的学習を通じて、革新的で創造的な、そして産業の発展に貢献できる職業教育の卒業生を育成する卓越したセンターとなることを目指します。',
     'misi' => 'ミッション',
-    'Misi' => '実践を重視した職業教育を提供し、学生が付加価値のある実際の製品を作り出すことを奨励します。学生の間で革新と起業家精神の文化を育てます。',
+    'Misi1' => '1. Organize vocational higher education with a Product-Based Learning by Doing (PBLD) model that is excellent, with integrity, and adaptive to the workforce needs of businesses, industries, and entrepreneurship in both national and international contexts.',
+    'Misi2' => '2. Conduct research and community service that focuses on knowledge, technology, and business while considering environmental balance.',
+    'Misi3' => '3. Establish collaborations with various institutions domestically and internationally for the development of vocational higher education that is industry-oriented.',
     'tentangpolitekniktakumi' => 'タクミ工科大学について',
     'takuminews' => 'タクミニュース',
     'beritaseputarpolitekniktakumi' => 'タクミ工科大学のニュース',
@@ -84,4 +86,5 @@ return [
     'hackathon22' => '検索するための他の方法:',
     'hackathon23' => '地図',
     'hackathon24' => 'タクミのウェブサイトを検索...',
+    'ppmb' => '新入生登録',
 ];
