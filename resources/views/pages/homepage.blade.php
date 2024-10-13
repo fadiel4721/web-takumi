@@ -457,7 +457,7 @@
     <div class="mt-20">
         <div class="text-center ">
             <h1 class="text-4xl md:text-5xl font-bold text-primary">@lang('common.prestasi')</h1>
-            <p class="text-sm md:text-lg text-[#A9A9A9]">@lang('hackathon.hackathon9')</p>
+            <p class="text-sm md:text-lg text-[#A9A9A9]">@lang('common.hackathon9')</p>
         </div>
         <div class="mt-10">
             <div class="container md:px-36 grid grid-cols-1 md:grid-cols-3 gap-8">
