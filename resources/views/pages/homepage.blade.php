@@ -16,7 +16,7 @@
                 class="hidden md:inline-block text-white text-lg outline-none border-none cursor-pointer font-medium
                 bg-gradient-to-br from-[#00AEE7] to-[#5468FF] shadow-[0_0.01em_0.01em_rgba(45,35,66,0.4),0_0.3em_0.7em_-0.01em_rgba(45,35,66,0.3),inset_0_-0.01em_0_rgba(58,65,111,0.5)] 
                 px-8 h-[2.6em] rounded-md transition-transform duration-150 ease-linear">
-                Pendaftaran Mahasiswa Baru
+                @lang('common.ppmb')
             </button>
 
             <style>
@@ -38,11 +38,7 @@
         <div class="absolute bottom-0 w-full bg-black bg-opacity-40 py-5 text-white">
             <div class=" mx-auto md:flex justify-between items-center gap-10">
                 <p class="container md:text-left text-sm md:text-base md:w-full text-justify">
-                    Politeknik Takumi mendorong mahasiswa untuk terus mengembangkan diri dan berkompetisi di tingkat
-                    nasional maupun internasional. Dengan fasilitas modern dan pengajar yang berkualitas, kami siap
-                    mencetak lulusan yang siap menghadapi tantangan global. Jadilah bagian dari keluarga besar Takumi
-                    dan raih
-                    prestasi gemilang.
+                   @lang('common.poltek')
                 </p>
 
                 <div class="md:hidden flex justify-center py-5 md:py-0">
@@ -50,7 +46,7 @@
                         class="inline-block text-white text-lg outline-none border-none cursor-pointer font-medium
            bg-gradient-to-br from-[#00AEE7] to-[#5468FF] shadow-[0_0.01em_0.01em_rgba(45,35,66,0.4),0_0.3em_0.7em_-0.01em_rgba(45,35,66,0.3),inset_0_-0.01em_0_rgba(58,65,111,0.5)] 
            px-8 h-[2.6em] rounded-md transition-transform duration-150 ease-linear">
-                        Pendaftaran Mahasiswa Baru
+                        @lang('common.ppmb')
                     </button>
 
                     <style>
@@ -132,14 +128,12 @@
                 </div>
                 <span class="w-[15px] h-auto bg-white rounded-r-lg"></span>
                 <div class="flex gap-4">
-                    <h1 class="text-4xl font-bold  ml-5">Visi</h1>
+                    <h1 class="text-4xl font-bold  ml-5">@lang('common.visi')</h1>
                     <img src="{{ asset('assets/tangan-ok.png') }}" width="40" alt="">
                 </div>
             </div>
             <p class="w-full md:w-2/3 text-lg">
-                Sebagai lembaga pendidikan tinggi terkemuka di bidang teknologi terapan yang menghasilkan lulusan
-                berkarakter dan kompeten yang mampu memberikan kontribusi kepada masyarakat dan lingkungan melalui
-                pembangunan berkelanjutan serta memiliki daya saing global
+                @lang('common.menjadi')
             </p>
         </div>
         <div class="container py-5">
@@ -149,24 +143,20 @@
                 </div>
                 <div class="flex gap-4">
                     <img src="{{ asset('assets/tangan-ok.png') }}" width="40" alt="">
-                    <h1 class="text-4xl font-bold mr-5">Misi</h1>
+                    <h1 class="text-4xl font-bold mr-5">@lang('common.misi')</h1>
                 </div>
                 <span class="w-[15px] h-auto bg-white rounded-l-lg"></span>
             </div>
             <div class="flex justify-end">
                 <p class="w-full md:w-2/3 text-lg ">
                 <ul>
-                    <li>1. Menyelenggarakan pendidikan tinggi vokasi dengan model pembelajran product Based - Learning
-                        by Doing (PBLD) yang unggul, ber-integritas dan adaptif terhadap kebutuhan tenaga kerja dunia
-                        usaha, industri dan kewirausahaan dalam lingkup nasional maupun internasianal
+                    <li>@lang('common.Misi1')
                     </li>
                     <li>
-                        2. Menyelenggarakan penelitian dan pengabdian kepada masyarakat yang berorientasi pada ilmu
-                        pengetahuan, teknologi, dan bisnis yang memperhatiakan keseimbangan lingkungan
+                       @lang('common.Misi2')
                     </li>
                     <li>
-                        3. Menyelenggarakan kerja sama dengan berbagai institusi dalam dan luat negeri untuk
-                        perkembangan pendidikan tinggi vokasi yang berorientasi industri
+                      @lang('common.Misi3')
                     </li>
                 </ul>
                 </p>
@@ -177,6 +167,7 @@
                 class="px-8 py-3 outline outline-white rounded-3xl text-sm hover:bg-white hover:text-primary transition-all duration-300">Tentang
                 Politeknik
                 Takumi</a>
+                {{-- <a href="#" class="px-8 py-3 outline outline-white rounded-3xl text-sm">@lang('common.tentangpolitekniktakumi')</a> --}}
         </div>
     </div>
     {{-- Visi & Misi --}}
@@ -184,8 +175,8 @@
     {{-- Takumi News --}}
     <div class="mt-10">
         <div class="text-center">
-            <h1 class="text-4xl md:text-5xl font-bold text-primary">Takumi News</h1>
-            <p class="text-sm md:text-lg text-[#A9A9A9]">Berita seputar kampus Politeknik Takumi</p>
+            <h1 class="text-4xl md:text-5xl font-bold text-primary">@lang('common.takuminews')</h1>
+            <p class="text-sm md:text-lg text-[#A9A9A9]">@lang('common.beritaseputarpolitekniktakumi')</p>
         </div>
 
         <div class="container grid grid-cols-1 md:grid-cols-5 gap-5 md:gap-10 mt-10">
@@ -195,9 +186,8 @@
                 <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     class="w-full h-full object-cover rounded-lg">
                 <div class="absolute left-0 bottom-0 bg-black p-3 md:p-5 w-full rounded-b-lg bg-opacity-40">
-                    <h1 class="text-lg md:text-2xl font-bold text-white">Student Affairs</h1>
-                    <p class="text-xs md:text-base text-white">Tim Robotika Politeknik Takumi Borong Juara di Kompetisi
-                        Nasional</p>
+                    <h1 class="text-lg md:text-2xl font-bold text-white">@lang('common.campus')</h1>
+                    <p class="text-xs md:text-base text-white">@lang('common.rob')</p>
                 </div>
             </div>
             <div
@@ -205,9 +195,8 @@
                 <img src="https://plus.unsplash.com/premium_photo-1722859358264-7ee23aeabd9d?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     class="w-full h-full object-cover rounded-lg">
                 <div class="absolute left-0 bottom-0 bg-black p-3 md:p-5 w-full rounded-b-lg bg-opacity-40">
-                    <h1 class="text-lg md:text-2xl font-bold text-white">Cooperation</h1>
-                    <p class="text-xs md:text-base text-white">Politeknik Takumi Jalin Kerjasama dengan Perusahaan
-                        Jepang untuk Pengembangan Kurikulum</p>
+                    <h1 class="text-lg md:text-2xl font-bold text-white">@lang('common.cooperation')</h1>
+                    <p class="text-xs md:text-base text-white">@lang('common.coop')</p>
                 </div>
             </div>
         </div>
@@ -217,9 +206,8 @@
                 <img src="https://plus.unsplash.com/premium_photo-1661761077411-d50cba031848?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     class="w-full h-full object-cover rounded-lg">
                 <div class="absolute left-0 bottom-0 bg-black p-3 md:p-5 w-full rounded-b-lg bg-opacity-40">
-                    <h1 class="text-lg md:text-2xl font-bold text-white">Research</h1>
-                    <p class="text-xs md:text-base text-white">Peneliti Takumi Temukan Inovasi Baru dalam Bidang Energi
-                        Terbarukan</p>
+                    <h1 class="text-lg md:text-2xl font-bold text-white">@lang('common.penelitian')</h1>
+                    <p class="text-xs md:text-base text-white">@lang('common.poli')</p>
                 </div>
             </div>
             <div
@@ -227,16 +215,15 @@
                 <img src="https://images.unsplash.com/photo-1638037099058-4674316b9bc4?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     class="w-full h-full object-cover rounded-lg">
                 <div class="absolute left-0 bottom-0 bg-black p-3 md:p-5 w-full rounded-b-lg bg-opacity-40">
-                    <h1 class="text-lg md:text-2xl font-bold text-white">Campus life</h1>
-                    <p class="text-xs md:text-base text-white">Politeknik Takumi Gelar Dies Natalis ke- 3 dengan
-                        Berbagai Kegiatan Menarik</p>
+                    <h1 class="text-lg md:text-2xl font-bold text-white">@lang('common.campuslife')</h1>
+                    <p class="text-xs md:text-base text-white">@lang('common.kegiatan')</p>
                 </div>
             </div>
         </div>
         <div class="text-center py-10">
             <a href=""
                 class="bg-primary text-white px-8 py-2 rounded-3xl text-sm hover:outline hover:outline-primary hover:bg-transparent hover:text-primary inline-block hover:translate-y-1 transition-all duration-300">
-                <span>Selengkapnya Takumi News</span>
+                <span>@lang('common.selanjutnya')</span>
                 <i class='bx bx-chevron-right text-lg align-middle'></i>
             </a>
         </div>
@@ -249,8 +236,8 @@
     {{-- <div class="mt-10 w-full h-auto bg-primary py-10">
         <div class="text-center ">
             <div class="py-5">
-                <h1 class="text-4xl md:text-5xl font-bold text-white">Akademik</h1>
-                <p class="text-sm md:text-lg text-white">4 Program studi mengejar passion career anda</p>
+                <h1 class="text-4xl md:text-5xl font-bold text-white">@lang('common.akademik')</h1>
+                <p class="text-sm md:text-lg text-white">@lang('common.passion')</p>
             </div>
         </div>
         <div class="container py-5">
@@ -262,7 +249,7 @@
                         <div
                             class="flip-card-front absolute w-full h-full rounded-lg bg-cover bg-white shadow-lg overflow-auto">
                             <div class="p-5 text-primary">
-                                <h1 class="font-semibold text-primary text-xl">Teknologi Informasi</h1>
+                                <h1 class="font-semibold text-primary text-xl">@lang('common.Ti')</h1>
                                 <p class="text-primary">Politeknik Takumi</p>
                             </div>
                             <img src="{{ asset('assets/TI.svg') }}" alt="Teknologi Informasi"
@@ -273,10 +260,9 @@
                         <div
                             class="flip-card-back absolute w-full h-full bg-white rounded-lg shadow-lg overflow-hidden">
                             <div class="p-5 text-primary">
-                                <h1 class="font-semibold text-primary text-xl">Teknologi Informasi</h1>
+                                <h1 class="font-semibold text-primary text-xl">@lang('common.Ti')</h1>
                                 <p class="text-primary mb-5">Politeknik Takumi</p>
-                                <p class="text-[#505050]">Prodi Teknologi Informasi Politeknik Takumi menghasilkan
-                                    lulusan siap kerja sebagai web developer, mobile developer, dan IoT programmer.</p>
+                                <p class="text-[#505050]">@lang('common.ti')</p>
                             </div>
                             <img src="{{ asset('assets/TI.svg') }}" alt="Teknologi Informasi"
                                 class="absolute -bottom-16 -right-16 -z-10 -rotate-[30deg] opacity-40">
@@ -291,7 +277,7 @@
                         <div
                             class="flip-card-front absolute w-full h-full rounded-lg bg-cover bg-white shadow-lg overflow-auto">
                             <div class="p-5 text-primary">
-                                <h1 class="font-semibold text-primary text-xl">Mekatronika</h1>
+                                <h1 class="font-semibold text-primary text-xl">@lang('common.Mk')</h1>
                                 <p class="text-primary">Politeknik Takumi</p>
                             </div>
                             <img src="{{ asset('assets/Mekatronika.svg') }}" alt="Mekatronika"
@@ -302,12 +288,9 @@
                         <div
                             class="flip-card-back absolute w-full h-full bg-white rounded-lg shadow-lg overflow-hidden">
                             <div class="p-5 text-primary">
-                                <h1 class="font-semibold text-primary text-xl">Mekatronika</h1>
+                                <h1 class="font-semibold text-primary text-xl">@lang('common.Mk')</h1>
                                 <p class="text-primary mb-5">Politeknik Takumi</p>
-                                <p class="text-[#505050]">Program Studi Mekatronika Politeknik Takumi menghasilkan
-                                    lulusan yang ahli dalam integrasi mekanika, elektronika, dan pemrograman. Profil
-                                    lulusan mencakup bidang automation engineer, robotic system developer, dan control
-                                    system programmer.</p>
+                                <p class="text-[#505050]">@lang('common.mk')</p>
                             </div>
                             <img src="{{ asset('assets/Mekatronika.svg') }}" alt="Mekatronika"
                                 class="absolute -bottom-16 -right-16 -z-10 -rotate-[30deg] opacity-40">
@@ -322,7 +305,7 @@
                         <div
                             class="flip-card-front absolute w-full h-full rounded-lg bg-cover bg-white shadow-lg overflow-auto">
                             <div class="p-5 text-primary">
-                                <h1 class="font-semibold text-primary text-xl">Bisnis Digital</h1>
+                                <h1 class="font-semibold text-primary text-xl">@lang('common.Bd')</h1>
                                 <p class="text-primary">Politeknik Takumi</p>
                             </div>
                             <img src="{{ asset('assets/Bisnis-Digital.svg') }}" alt="Bisnis Digital"
@@ -333,11 +316,9 @@
                         <div
                             class="flip-card-back absolute w-full h-full bg-white rounded-lg shadow-lg overflow-hidden">
                             <div class="p-5 text-primary">
-                                <h1 class="font-semibold text-primary text-xl">Bisnis Digital</h1>
+                                <h1 class="font-semibold text-primary text-xl">@lang('common.Bd')</h1>
                                 <p class="text-primary mb-5">Politeknik Takumi</p>
-                                <p class="text-[#505050]">Program Studi Bisnis Digital Politeknik Takumi menghasilkan
-                                    lulusan yang ahli dalam strategi digital, e-commerce, dan analisis data. Profil
-                                    lulusan mencakup digital marketer, business analyst, dan e-commerce specialist.</p>
+                                <p class="text-[#505050]">@lang('common.bd')</p>
                             </div>
                             <img src="{{ asset('assets/Bisnis-Digital.svg') }}" alt="Bisnis Digital"
                                 class="absolute -bottom-16 -right-16 -z-10 -rotate-[30deg] opacity-40">
@@ -351,7 +332,7 @@
                         <!-- Front Side -->
                         <div class="flip-card-front absolute w-full h-full rounded-lg bg-cover bg-white shadow-lg">
                             <div class="p-5 text-primary">
-                                <h1 class="font-semibold text-primary text-xl">Bahasa Jepang</h1>
+                                <h1 class="font-semibold text-primary text-xl">@lang('common.Bj')</h1>
                                 <p class="text-primary">Politeknik Takumi</p>
                             </div>
                             <img src="{{ asset('assets/Bahasa-Jepang.svg') }}" alt="Bahasa Jepang"
@@ -362,11 +343,9 @@
                         <div
                             class="flip-card-back absolute w-full h-full bg-white rounded-lg shadow-lg overflow-hidden">
                             <div class="p-5 text-primary">
-                                <h1 class="font-semibold text-primary text-xl">Bahasa Jepang</h1>
+                                <h1 class="font-semibold text-primary text-xl">@lang('common.Bj')</h1>
                                 <p class="text-primary mb-5">Politeknik Takumi</p>
-                                <p class="text-[#505050]">Program Studi Bahasa Jepang Politeknik Takumi menghasilkan
-                                    lulusan yang mahir berbahasa Jepang dan memahami budaya Jepang. Profil lulusan
-                                    mencakup penerjemah, pengajar bahasa Jepang, dan guide profesional.</p>
+                                <p class="text-[#505050]">@lang('common.bj')</p>
                             </div>
                             <img src="{{ asset('assets/Bahasa-Jepang.svg') }}" alt="Bahasa Jepang"
                                 class="absolute -bottom-16 -right-16 -z-10 -rotate-[30deg] opacity-40">
@@ -472,8 +451,8 @@
     {{-- Penelitian --}}
     {{-- <div class="mt-20">
         <div class="text-center mb-10">
-            <h1 class="text-4xl md:text-5xl font-bold text-primary">Penelitian</h1>
-            <p class="text-sm md:text-lg text-[#A9A9A9]">Berita seputar kampus Politeknik Takumi</p>
+            <h1 class="text-4xl md:text-5xl font-bold text-primary">@lang('common.penelitian')</h1>
+            <p class="text-sm md:text-lg text-[#A9A9A9]">@lang('common.brt')</p>
         </div>
         <div class="container">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 h-auto">
@@ -482,36 +461,21 @@
                         alt="" class="rounded-2xl w-full h-auto ">
                 </div>
                 <div class="">
-                    <h1 class="text-xl font-bold text-primary">Penelitian dan Inovasi</h1>
-                    <p class="text-[#A9A9A9] text-[14px] mb-1 text-justify">Kontribusi dari Politeknik Takumi dalam
-                        membangun bangsa
-                        melalui Tridharma Pendidikan perguruan
-                        tinggi mendorong untuk berinovasi dalam penelitian dalam perkembangan ilmu pengetahuan dan
-                        teknologi baik itu nasional maupun internasional lebih dari 20 penelitian setiap tahunnya dari
-                        Politeknik Takumi jurnal terpublikasi dari sinta 4 hingga sinta 1 berinovasi dalam membangun
-                        serta berperan aktif dalam project bersama (Dosen dan Mahasiswa).
+                    <h1 class="text-xl font-bold text-primary">@lang('common.pnlt')</h1>
+                    <p class="text-[#A9A9A9] text-[14px] mb-1 text-justify">@lang('common.isi1')</p>
                     </p>
                     <p class="text-[#A9A9A9] text-[14px] mb-1 text-justify">
-                        Politeknik Takumi tidak hanya fokus pada penelitian dosen, tetapi juga memberikan kesempatan
-                        bagi mahasiswa untuk terlibat aktif dalam kegiatan penelitian. Setiap tahunnya, lebih dari 20
-                        penelitian yang melibatkan mahasiswa berhasil dipublikasikan dalam jurnal ilmiah. Hal ini
-                        menunjukkan bahwa mahasiswa Takumi memiliki potensi yang besar untuk menjadi generasi penerus
-                        peneliti yang handal.
+                        @lang('common.isi2')
                     </p>
                     <p class="text-[#A9A9A9] text-[14px] text-justify">
-                        Dengan semangat kolaborasi, Politeknik Takumi secara aktif menjalin kerja sama dengan berbagai
-                        pihak, baik industri, pemerintah, maupun institusi pendidikan lainnya. Hasilnya, lebih dari 20
-                        penelitian berkualitas tinggi telah dipublikasikan dalam jurnal nasional dan internasional
-                        terindeks Scopus. Melalui sinergi ini, kami berupaya untuk menghasilkan inovasi yang relevan
-                        dengan kebutuhan masyarakat dan mendorong pengembangan ilmu pengetahuan dan teknologi di
-                        Indonesia.
+                        @lang('common.isi3')
                     </p>
                 </div>
             </div>
             <div class="text-center mt-16">
                 <a href=""
                     class="bg-primary text-white px-8 py-2 rounded-3xl text-sm hover:outline hover:outline-primary hover:bg-transparent hover:text-primary inline-block hover:translate-y-1 transition-all duration-300">
-                    <span>Selengkapnya Penelitian</span>
+                    <span>@lang('common.seleng2')</span>
                     <i class='bx bx-chevron-right text-lg align-middle'></i>
                 </a>
             </div>
@@ -600,6 +564,7 @@
         <div class="text-center mb-10">
             <h1 class="text-4xl md:text-5xl font-bold text-white">Acara Mendatang</h1>
             <p class="text-white">Acara yang akan datang di Politeknik Takumi</p>
+            {{-- <h1 class="text-4xl md:text-5xl font-bold text-white">@lang('common.kongo')</h1> --}}
         </div>
         <div class="container md:px-10">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:px-20">
@@ -612,10 +577,9 @@
                         </div>
                     </div>
                     <div class="p-7">
-                        <h1 class="text-xl font-bold text-black">Teknologi Informasi</h1>
-                        <p class="text-[#A9A9A9] text-md mb-2">Hackathon Takumi</p>
-                        <p class="text-black text-[14px]">Ajang kompetisi pembuatan aplikasi atau perangkat lunak
-                            inovatif dengan tema spesifik smart city</p>
+                        <h1 class="text-xl font-bold text-black">@lang('common.Ti')</h1>
+                        <p class="text-[#A9A9A9] text-md mb-2">@lang('common.hackathon1')</p>
+                        <p class="text-black text-[14px]">@lang('common.hackathon2')</p>
                     </div>
                 </div>
                 <div class="w-full h-auto bg-white rounded-xl shadow-xl">
@@ -627,10 +591,9 @@
                         </div>
                     </div>
                     <div class="p-7">
-                        <h1 class="text-xl font-bold text-black">Politeknik Takumi</h1>
-                        <p class="text-[#A9A9A9] text-md mb-2">Expo Inovasi Mahasiswa</p>
-                        <p class="text-black text-[14px]">Pameran karya-karya inovatif mahasiswa Politeknik Takumi dari
-                            berbagai macam Program Studi yang ada</p>
+                        <h1 class="text-xl font-bold text-black">@lang('common.hackathon3')</h1>
+                        <p class="text-[#A9A9A9] text-md mb-2">@lang('common.hackathon4')</p>
+                        <p class="text-black text-[14px]">@lang('common.hackathon5')</p>
                     </div>
                 </div>
                 <div class="w-full h-auto bg-white rounded-xl shadow-xl">
@@ -642,10 +605,9 @@
                         </div>
                     </div>
                     <div class="p-7">
-                        <h1 class="text-xl font-bold text-black">Teknologi Informasi</h1>
-                        <p class="text-[#A9A9A9] text-md mb-2">Workshop IoT (Internet of Things)</p>
-                        <p class="text-black text-[14px]">Ajang kompetisi pembuatan aplikasi atau perangkat lunak
-                            inovatif dengan tema spesifik smart city</p>
+                        <h1 class="text-xl font-bold text-black">@lang('common.Ti')</h1>
+                        <p class="text-[#A9A9A9] text-md mb-2">@lang('common.hackathon6')</p>
+                        <p class="text-black text-[14px]">@lang('common.hackathon7')</p>
                     </div>
                 </div>
             </div>
@@ -673,8 +635,8 @@
                         alt="Prodi Mahasiswa"
                         class="rounded-xl cursor-pointer transition-transform duration-300 group-hover:translate-x-0 group-hover:translate-y-2 group-hover:scale-105 h-96 w-full object-cover group-hover:filter-none filter grayscale">
                     <div class="text-center mt-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <p class="text-primary">Prodi Mahasiswa</p>
-                        <h1 class="text-xl font-semibold text-primary">Nama Mahasiswa</h1>
+                        <p class="text-primary">@lang('common.hackathon10')</p>
+                        <h1 class="text-xl font-semibold text-primary">@lang('common.hackathon11')</h1>
                     </div>
                 </div>
                 <div class="group relative">
@@ -682,8 +644,8 @@
                         alt="Prodi Mahasiswa"
                         class="rounded-xl cursor-pointer transition-transform duration-300 group-hover:translate-x-0 group-hover:translate-y-2 group-hover:scale-105 h-96 w-full object-cover group-hover:filter-none filter grayscale">
                     <div class="text-center mt-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <p class="text-primary">Prodi Mahasiswa</p>
-                        <h1 class="text-xl font-semibold text-primary">Nama Mahasiswa</h1>
+                        <p class="text-primary">@lang('common.hackathon10')</p>
+                        <h1 class="text-xl font-semibold text-primary">@lang('common.hackathon12')</h1>
                     </div>
                 </div>
                 <div class="group relative">
@@ -691,15 +653,15 @@
                         alt="Prodi Mahasiswa"
                         class="rounded-xl cursor-pointer transition-transform duration-300 group-hover:translate-x-0 group-hover:translate-y-2 group-hover:scale-105 h-96 w-full object-cover group-hover:filter-none filter grayscale">
                     <div class="text-center mt-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <p class="text-primary">Prodi Mahasiswa</p>
-                        <h1 class="text-xl font-semibold text-primary">Nama Mahasiswa</h1>
+                        <p class="text-primary">@lang('common.hackathon10')</p>
+                        <h1 class="text-xl font-semibold text-primary">@lang('common.hackathon13')</h1>
                     </div>
                 </div>
             </div>
             <div class="text-center mt-10">
                 <a href=""
                     class="bg-primary text-white px-8 py-2 rounded-3xl text-sm hover:outline hover:outline-primary hover:bg-transparent hover:text-primary inline-block hover:translate-y-1 transition-all duration-300">
-                    <span>Selengkapnya Prestasi Mahasiswa</span>
+                    <span>@lang('common.mor')</span>
                     <i class='bx bx-chevron-right text-lg align-middle'></i>
                 </a>
             </div>
@@ -831,27 +793,23 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="w-full h-auto bg-white">
                     <img src="https://plus.unsplash.com/premium_photo-1661546333305-667b3326bb99?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="" class="w-full h-80 object-cover">
-                    <h1 class="py-3 font-semibold text-xl">Workshop Leadership Muda</h1>
-                    <p class="text-[#A9A9A9] mb-5">Membangun jiwa kepemimpinan sejak dini melalui pelatihan dan
-                        simulasi, Melalui pelatihan dan
-                        simulasi yang dirancang khusus, kamu akan diajak untuk menggali potensi kepemimpinan yang
-                        terpendam dalam diri. </p>
+                        alt="">
+                    <h1 class="py-3 font-semibold text-xl">@lang('common.hackathon14')</h1>
+                    <p class="text-[#A9A9A9] mb-5">@lang('common.hackathon15')</p>
                     <a href=""
                         class="text-primary inline-block hover:translate-x-1 transition-all duration-700">
-                        <span>Selengkapnya</span>
+                        <span>@lang('common.readmore')</span>
                         <i class='bx bx-chevron-right text-lg align-middle'></i>
                     </a>
                 </div>
                 <div class="w-full h-auto bg-white">
                     <img src="https://plus.unsplash.com/premium_photo-1661690088942-d968065868d0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="" class="w-full h-80 object-cover">
-                    <h1 class="py-3 font-semibold text-xl">Bincang Karir Bersama Alumni Sukses</h1>
-                    <p class="text-[#A9A9A9] mb-5">Mengundang alumni yang telah sukses di bidangnya untuk berbagi
-                        pengalaman dan tips karier.</p>
+                        alt="">
+                    <h1 class="py-3 font-semibold text-xl">@lang('common.hackathon16')</h1>
+                    <p class="text-[#A9A9A9] mb-5">@lang('common.hackathon17')</p>
                     <a href=""
                         class="text-primary inline-block hover:translate-x-1 transition-all duration-700">
-                        <span>Selengkapnya</span>
+                        <span>@lang('common.readmore')</span>
                         <i class='bx bx-chevron-right text-lg align-middle'></i>
                     </a>
                 </div>
@@ -941,29 +899,30 @@
     {{-- Non Akademik --}}
     <div class="bg-primary w-full h-auto mt-20">
         <div class="container py-5">
-            <h1 class="py-5 text-4xl md:text-5xl font-bold text-white text-center mb-5">Non Akademik</h1>
+            <h1 class="py-5 text-4xl md:text-5xl font-bold text-white text-center mb-5">@lang('common.non')</h1>
             <div class="grid grid-cols-1 mb-5 md:grid-cols-2 gap-8">
                 <div class="w-full h-auto">
                     <img src="https://plus.unsplash.com/premium_photo-1710467004560-4e82fe4c80e9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="" class="w-full h-80 object-cover">
-                    <h1 class="py-3 font-semibold text-xl text-white">Workshop Mindfulnes dan Meditasi</h1>
+                    <h1 class="py-3 font-semibold text-xl text-white">@lang('common.hackathon18')</h1>
                     <p class="text-white mb-5">
-                        Mengajarkan teknik relaksi dan meningkatkan fokus untuk keseimbangan hidup
+                        @lang('common.hackathon19')
                     </p>
                     <a href="" class="text-white inline-block hover:translate-x-1 transition-all duration-700">
-                        <span>Selengkapnya</span>
+                        <span>@lang('common.readmore')</span>
                         <i class='bx bx-chevron-right text-lg align-middle'></i>
                     </a>
                 </div>
                 <div class="w-full h-auto ">
                     <img src="https://plus.unsplash.com/premium_photo-1705883064233-e56b05f42b07?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="" class="w-full h-80 object-cover">
-                    <h1 class="py-3 font-semibold text-xl text-white">Bootcamp Public Speaking</h1>
+                    <h1 class="py-3 font-semibold text-xl text-white">@lang('common.hackathon20')</h1>
                     <p class="text-white mb-5">
-                        Pelatihan intensif untuk menguasai keterampilan berbicara di depan umum
+                        @lang('common.hackathon21')
                     </p>
-                    <a href="" class="text-white inline-block hover:translate-x-1 transition-all duration-700">
-                        <span>Selengkapnya</span>
+                    <a href=""
+                        class="text-primary inline-block hover:translate-x-1 transition-all duration-700">
+                        <span>@lang('common.readmore')</span>
                         <i class='bx bx-chevron-right text-lg align-middle'></i>
                     </a>
                 </div>

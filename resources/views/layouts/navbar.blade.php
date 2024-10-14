@@ -1,23 +1,23 @@
 <nav x-data="{ isOpen: false }" class="">
     <div id="navbar"
-        class="bg-primary text-white fixed w-full z-10 transition-all duration-300 ease-in-out">
-        <div class="container flex justify-between items-center py-3 ">
+        class=" bg-primary text-white fixed w-full z-10 transition-all duration-300 ease-in-out">
+        <div class="container flex justify-between items-center py-3">
             <h1 class="text-md md:text-xl font-semibold">Politeknik Takumi</h1>
-            <div class="hidden md:flex gap-6 ">
-                <a href="#" class="relative group"><span class="font-bold"></span> Mahasiswa <span
-                        class="absolute -top-4 left-1/2 w-0 h-[5px] rounded-b-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span></a>
-                <a href="#" class="relative group">Staff & Fakultas <span
-                        class="absolute -top-4 left-1/2 w-0 h-[5px] rounded-b-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span></a>
-                <a href="#" class="relative group">Orang Tua<span
-                        class="absolute -top-4 left-1/2 w-0 h-[5px] rounded-b-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span></a>
-                <a href="#" class="relative group">Pengunjung <span
-                        class="absolute -top-4 left-1/2 w-0 h-[5px] rounded-b-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span></a>
-                <a href="#" class="relative group">Alumni <span
-                        class="absolute -top-4 left-1/2 w-0 h-[5px] rounded-b-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span></a>
+            <div class="hidden md:flex gap-6">
+                <a href="#" class="relative group"><span class="font-bold"></span> @lang('common.mahasiswa') <span
+                        class="absolute -top-5 left-1/2 w-0 h-[5px] rounded-b-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span></a>
+                <a href="#" class="relative group">@lang('common.staf&fakultas') <span
+                        class="absolute -top-5 left-1/2 w-0 h-[5px] rounded-b-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span></a>
+                <a href="#" class="relative group">@lang('common.orangtua') <span
+                        class="absolute -top-5 left-1/2 w-0 h-[5px] rounded-b-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span></a>
+                <a href="#" class="relative group">@lang('common.pengunjung') <span
+                        class="absolute -top-5 left-1/2 w-0 h-[5px] rounded-b-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span></a>
+                <a href="#" class="relative group">@lang('common.alumni') <span
+                        class="absolute -top-5 left-1/2 w-0 h-[5px] rounded-b-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span></a>
             </div>
             <div class="flex items-center gap-6">
                 <a href="javascript:void(0)" id="search-btn" class="flex items-center gap-2">
-                    <i class='bx bx-search'></i> Search
+                    <i class='bx bx-search'></i> @lang('common.search')
                 </a>
                 
             </div>
@@ -25,17 +25,15 @@
                 class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50 hidden ">
                 <div class=" p-6 rounded-lg w-[500px]">
                     <div class="flex justify-center items-center mb-4">
-                        <h2 class="text-xl font-bold">Search Takumi: </h2>
+                        <h2 class="text-xl font-bold">@lang('common.search') Takumi: </h2>
                         <button id="close-modal" class="hidden text-gray-600 hover:text-gray-900">
                             <i class='bx bx-x text-2xl'></i>
                         </button>
                     </div>
-                    <input type="text" name="search" id="search-input" placeholder="Search Takumi Website..."
-                        class="w-full p-2 rounded-lg">
+                    <input type="text" name="search" id="search-input" placeholder="@lang('common.hackathon24')"
+                    class="w-full p-2 rounded-lg">
                     <div class="flex justify-center items-center mt-4">
-                        <h2 class="text-xl font-bold">Other Ways To Search: <a
-                                href="https://maps.app.goo.gl/YoeetP6uq4ftJxRE9" target="_blank" class="underline">Maps</a>
-                        </h2>
+                        <h2 class="text-xl font-bold">@lang('common.hackathon22') <a href="https://maps.app.goo.gl/YoeetP6uq4ftJxRE9" target="_blank" class="underline font-medium">@lang('common.hackathon23')</a></h2>
                         <button id="close-modal" class="hidden text-gray-600 hover:text-gray-900">
                             <i class='bx bx-x text-2xl'></i>
                         </button>
@@ -49,39 +47,62 @@
         <div id="navbar2" class="md:py-4 bg-white text-black">
             <nav class="hidden md:flex justify-center">
                 <ul id="navbar" class="flex justify-center gap-10">
-                    <li><a href="" class="relative group">News
-                            </a></li>
-                    <li><a href="" class="relative group">Events
-                            </a></li>
-                    <li><a href="" class="relative group">Akademik
-                            </a></li>
-                    <li><div class="relative">
-                        <div class="flex items-center gap-1 cursor-pointer"
-                            onclick="toggleDropdown('programDropdown')">
-                            Program Studi <i class="bx bx-chevron-down"></i>
-                        </div>
-                        <ul id="programDropdown"
-                            class="hidden absolute bg-white text-black py-2 mt-2 rounded shadow-lg z-50 min-w-[200px]">
-                            <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">Teknologi Informasi</a>
-                            </li>
-                            <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">Bisnis Digital</a>
-                            </li>
-                            <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">Mekatronika</a>
-                            </li>
-                            <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">Bahasa Jepang</a>
-                            </li>
-                        </ul>
-                    </div></li>
-                    <li><a href="" class="relative group">Penelitian
-                            </a></li>
-                    <li><a href="" class="relative group">Campus Life
-                            </a></li>
-                    <li><a href="" class="relative group bg-primary px-4 py-2 text-sm rounded-lg text-white">Pendaftaran Mahasiswa
-                            </a></li>
+                    <li><a href="" class="relative group">@lang('common.news')
+                            
+                        </a></li>
+                    <li><a href="" class="relative group">@lang('common.event')
+                            
+                        </a></li>
+                    <li><a href="" class="relative group">@lang('common.akademik')
+                            
+                        </a></li>
+                        <li><div class="relative">
+                            <div class="flex items-center gap-1 cursor-pointer"
+                                onclick="toggleDropdown('programDropdown')">
+                                Program Studi <i class="bx bx-chevron-down"></i>
+                            </div>
+                            <ul id="programDropdown"
+                                class="hidden absolute bg-white text-black py-2 mt-2 rounded shadow-lg z-50 min-w-[200px]">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">Teknologi Informasi</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">Bisnis Digital</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">Mekatronika</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">Bahasa Jepang</a>
+                                </li>
+                            </ul>
+                        </div></li>
+                    <li><a href="" class="relative group">@lang('common.penelitian')
+                            
+                        </a></li>
+                    <li><a href="" class="relative group">@lang('common.campuslife')
+                            
+                        </a></li>
+                    {{-- <li><a href="" class="relative group">@lang('common.pendaftaran')
+                            
+                        </a></li> --}}
+                        <li><a href="" class="relative group bg-primary px-4 py-2 text-sm rounded-lg text-white">@lang('common.pendaftaran')
+                        </a></li>
+                    <li><a href="" class="relative group">@lang('common.profile')
+                            
+                        </a></li>
+                        <li>
+                            <div class="relative inline-block text-left">
+                                <form class="d-flex">
+                                    <select class="form-select changeLang bg-gray-200 text-gray-800 border border-black rounded">
+                                        <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>English</option>
+                                        <option value="id" {{ session()->get('locale') == 'id' ? 'selected' : '' }}>Bahasa Indonesia</option>
+                                        <option value="ja" {{ session()->get('locale') == 'ja' ? 'selected' : '' }}>日本語</option>
+                                    </select>
+                                </form>
+                            </div>
+                            
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -130,23 +151,23 @@
                 </ul>
             </div>
             <a href="javascript:void(0)" id="search-btn" class="hidden md:flex items-center gap-2">
-                <i class='bx bx-search'></i> Search
+                <i class='bx bx-search'></i> @lang('common.search')
             </a>
             <!-- Modal (hidden by default) -->
             <div id="search-modal"
                 class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50 hidden ">
                 <div class=" p-6 rounded-lg w-[500px]">
                     <div class="flex justify-center items-center mb-4">
-                        <h2 class="text-xl font-bold">Search Takumi: </h2>
+                        <h2 class="text-xl font-bold">@lang('common.search') Takumi: </h2>
                         <button id="close-modal" class="hidden text-gray-600 hover:text-gray-900">
                             <i class='bx bx-x text-2xl'></i>
                         </button>
                     </div>
-                    <input type="text" name="search" id="search-input" placeholder="Search Takumi Website..."
+                    <input type="text" name="search" id="search-input" placeholder="@lang('common.hackathon24')"
                         class="w-full p-2 rounded-lg">
                     <div class="flex justify-center items-center mt-4">
-                        <h2 class="text-xl font-bold">Other Ways To Search: <a
-                                href="https://maps.app.goo.gl/YoeetP6uq4ftJxRE9" target="_blank" class="underline">Maps</a>
+                        <h2 class="text-xl font-bold">@lang('common.hackathon22') <a
+                                href="https://maps.app.goo.gl/YoeetP6uq4ftJxRE9" target="_blank" class="underline">@lang('common.hackathon23')</a>
                         </h2>
                         <button id="close-modal" class="hidden text-gray-600 hover:text-gray-900">
                             <i class='bx bx-x text-2xl'></i>
@@ -332,3 +353,9 @@
         });
     });
 </script> 
+<script>
+    $('.changeLang').change(function(){
+        var url = "{{route('changeLang')}}";
+        window.location.href = url  + "?lang=" + $(this).val();
+    });
+</script>

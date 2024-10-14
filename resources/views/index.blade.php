@@ -9,6 +9,13 @@
     <title>Politeknik Takumi</title>
     <link rel="shortcut icon" href="{{ asset('assets/logo-tangan.png') }}" type="image/x-icon">
 
+    {{--Jquery--}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+    </script>
+    <link rel="shortcut icon" href="{{ asset('logo/logo-tangan2.png') }}" type="image/x-icon">
+    {{-- Flaticon --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flaticon@2.1.0/flaticon.css">
+    
     {{-- Alpine JS --}}
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x" defer></script>
 
@@ -19,6 +26,7 @@
     {{-- CSS --}}
     @vite('resources/css/app.css')
     @vite('resources/css/style.css')
+    
 </head>
 
 <body>
