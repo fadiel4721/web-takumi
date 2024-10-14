@@ -1,6 +1,6 @@
 <footer class="">
     <div class="container md:px-36 py-10">
-        <div class="grid grid-cols-1 md:grid-cols-5 gap-5">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-5">
             <div class="">
                 <h1 class="font-bold text-primary text-lg mb-2">Program Studi</h1>
                 <a href="">
