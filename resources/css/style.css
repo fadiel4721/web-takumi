@@ -1,22 +1,20 @@
-/* Navbar bagian atas setelah di-scroll */
+/* Navbar bagian atas setelah di-scroll
 .navbar-scroll {
-    background-color: #00AEE7; /* Warna primary */
+    background-color: #00AEE7; 
     transition: background-color 0.3s ease-in-out;
 }
 
-/* Navbar bagian bawah setelah di-scroll */
 .navbar2-scroll {
-    background-color: white; /* Background putih */
-    color: #00AEE7; /* Text warna primary */
+    background-color: white; 
+    color: #00AEE7; 
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Aturan tambahan untuk link di navbar bagian bawah */
 .navbar2-scroll a {
-    color: #00AEE7; /* Text warna primary */
-}
-
+    color: #00AEE7; 
+} */
+/* 
 .flip-card {
     perspective: 800px;
   }
@@ -38,4 +36,8 @@
 
   .flip-card-back {
     transform: rotateY(180deg);
-  }
+  } */
+
+html{
+  scroll-behavior: smooth;
+}
