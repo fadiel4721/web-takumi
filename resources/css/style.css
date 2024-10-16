@@ -14,7 +14,7 @@
 .navbar2-scroll a {
     color: #00AEE7; 
 } */
-
+/* 
 .flip-card {
     perspective: 800px;
   }
@@ -36,4 +36,8 @@
 
   .flip-card-back {
     transform: rotateY(180deg);
-  }
+  } */
+
+html{
+  scroll-behavior: smooth;
+}

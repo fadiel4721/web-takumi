@@ -13,7 +13,7 @@ return [
     'akademik' => 'Akademik',
     'penelitian' => 'Penelitian',
     'campuslife' => 'Kehidupan Kampus',
-    'pendaftaran' => 'Pendaftaran',
+    'pendaftaran' => 'Pendaftaran Mahasiswa',
     'profile' => 'Profil',
     'search' => 'Cari',
     'poltek' => 'Politeknik Takumi mendorong mahasiswa untuk terus mengembangkan diri dan berkompetisi di tingkat nasional maupun  internasional. Dengan fasilitas modern dan pengajar yang berkualitas, kami siap mencetak lulusan  yang siap menghadapi tantangan global. Jadilah bagian dari keluarga besar Takumi dan raih prestasi gemilang."',

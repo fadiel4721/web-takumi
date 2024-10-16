@@ -27,6 +27,7 @@
     @vite('resources/css/app.css')
     @vite('resources/css/style.css')
     
+    
 </head>
 
 <body>

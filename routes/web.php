@@ -7,6 +7,7 @@ Route::get('/', function () {
     return view('index');
     
 });
+// Route::get('/lang/change', [LangController::class, 'change'])->name('changeLang');
 Route::get('/lang/change', [LangController::class, 'change'])->name('changeLang');
 
 

@@ -70,26 +70,30 @@
 
     <section id="hero"
         style="
-                background-image: url('{{ asset('images/mahasiswa2.png') }}');
+                background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), 
+                          url('{{ asset('images/mahasiswa2.png') }}');
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
                 height: 100vh;
                 background-attachment: fixed;
-                brightness: 0.5;
+                brightness: 1;
+                
             "
         class="relative">
         <div class="absolute inset-0 flex flex-col justify-center items-center sm:top-20">
             <!-- Logo Takumi -->
             <img src="{{ asset('images/logo-takumi.png') }}" class="w-64 md:w-80 ">
+            <p
+                class="description container w-full md:w-2/3 mt-20 text-[16px] md:text-lg mx-auto text-white md:font-semibold text-justify">
+                Politeknik Takumi mendorong mahasiswa untuk terus mengembangkan diri dan berkompetisi di tingkat
+                nasional maupun
+                internasional. Dengan fasilitas modern dan pengajar yang berkualitas, kami siap mencetak lulusan yang
+                siap menghadapi
+                tantangan global. “Jadilah bagian dari keluarga besar Takumi dan raih prestasi gemilang."</p>
 
             <!-- Tombol Pendaftaran PPMB -->
-            <button
-                class="md:hidden inline-block mt-5 text-white text-lg outline-none border-none cursor-pointer font-medium
-                bg-gradient-to-br from-[#00AEE7] to-[#5468FF] shadow-[0_0.01em_0.01em_rgba(45,35,66,0.4),0_0.3em_0.7em_-0.01em_rgba(45,35,66,0.3),inset_0_-0.01em_0_rgba(58,65,111,0.5)] 
-                px-8 h-[2.6em] rounded-md transition-transform duration-150 ease-linear">
-                Pendaftaran Mahasiswa Baru
-            </button>
+            <a href="" class="px-12 py-4 bg-primary rounded-lg text-white mt-10">Pendaftaran Mahasiswa</a>
 
             <style>
                 button:hover {
@@ -120,60 +124,55 @@
 
 
     {{-- Visi & Misi --}}
-    <div id="visi-misi" class="mt-10 bg-primary w-full h-auto text-white ">
-        <div class="container py-5">
-            <div class="py-5 flex relative">
-                <div class="absolute right-0 top-0">
-                    <img src="{{ asset('assets/serpihan.svg') }}" width="150" alt="">
+    <div id="visi-misi" class="bg-white w-full h-auto py-10 ">
+        <div class="relative grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+            <!-- Left content column -->
+            <div class="flex flex-col justify-between space-y-4 md:space-y-0">
+                <!-- Visi Section -->
+                <div class="flex bg-primary rounded-r-xl mb-4">
+                    <div class="w-full px-4 py-4 text-white">
+                        <h1 class="text-3xl md:text-4xl underline mb-4 font-semibold">Visi</h1>
+                        <p class="description text-sm ">
+                            Sebagai lembaga pendidikan tinggi terkemuka di bidang teknologi terapan yang menghasilkan
+                            lulusan berkarakter dan kompeten yang mampu memberikan kontribusi kepada masyarakat dan lingkungan
+                            melalui pembangunan berkelanjutan serta memiliki daya saing global.
+                        </p>
+                    </div>
                 </div>
-                <span class="w-[15px] h-auto bg-white rounded-r-lg"></span>
-                <div class="flex gap-4">
-                    <h1 class="text-4xl font-bold  ml-5">@lang('common.visi')</h1>
-                    <img src="{{ asset('assets/tangan-ok.png') }}" width="40" alt="">
+                <!-- Misi Section -->
+                <div class="flex bg-primary rounded-r-xl">
+                    <div class="w-full px-4 py-4 text-white">
+                        <h1 class="text-3xl md:text-4xl underline mb-4 font-semibold">Misi</h1>
+                        <ol class="description list-decimal list-inside space-y-2 text-sm ">
+                            <li>
+                                Menyelenggarakan pendidikan tinggi vokasi dengan model pembelajaran Product Based - Learning
+                                by Doing (PBLD) yang unggul, ber-integritas dan adaptif terhadap kebutuhan tenaga kerja dunia
+                                usaha, industri, dan kewirausahaan dalam lingkup nasional maupun internasional.
+                            </li>
+                            <li>
+                                Menyelenggarakan penelitian dan pengabdian kepada masyarakat yang berorientasi pada ilmu
+                                pengetahuan, teknologi, dan bisnis yang memperhatikan keseimbangan lingkungan.
+                            </li>
+                            <li>
+                                Menyelenggarakan kerja sama dengan berbagai institusi dalam dan luar negeri untuk perkembangan
+                                pendidikan tinggi vokasi yang berorientasi industri.
+                            </li>
+                        </ol>
+                    </div>
                 </div>
             </div>
-            <p class="w-full md:w-2/3 text-lg">
-                @lang('common.menjadi')
-            </p>
-        </div>
-        <div class="container py-5">
-            <div class="py-5 flex justify-end relative">
-                <div class="absolute left-0 top-20">
-                    <img src="{{ asset('assets/serpihan.svg') }}" width="150" alt="">
-                </div>
-                <div class="flex gap-4">
-                    <img src="{{ asset('assets/tangan-ok.png') }}" width="40" alt="">
-                    <h1 class="text-4xl font-bold mr-5">@lang('common.misi')</h1>
-                </div>
-                <span class="w-[15px] h-auto bg-white rounded-l-lg"></span>
+    
+            <!-- Right image column -->
+            <div class="hidden md:flex justify-center items-center absolute bottom-0 right-0">
+                <img src="{{ asset('assets/gaje.png') }}" alt="" class="md:w-[80%]" />
             </div>
-            <div class="flex justify-end">
-                <p class="w-full md:w-2/3 text-lg ">
-                <ul>
-                    <li>@lang('common.Misi1')
-                    </li>
-                    <li>
-                       @lang('common.Misi2')
-                    </li>
-                    <li>
-                      @lang('common.Misi3')
-                    </li>
-                </ul>
-                </p>
-            </div>
-        </div>
-        <div class="text-center py-10">
-            <a href="#"
-                class="px-8 py-3 outline outline-white rounded-3xl text-sm hover:bg-white hover:text-primary transition-all duration-300">Tentang
-                Politeknik
-                Takumi</a>
-                {{-- <a href="#" class="px-8 py-3 outline outline-white rounded-3xl text-sm">@lang('common.tentangpolitekniktakumi')</a> --}}
         </div>
     </div>
+    
     {{-- Visi & Misi --}}
 
     {{-- Takumi News --}}
-    <div class="mt-10">
+    {{-- <div class="mt-10">
         <div class="text-center">
             <h1 class="text-4xl md:text-5xl font-bold text-primary">@lang('common.takuminews')</h1>
             <p class="text-sm md:text-lg text-[#A9A9A9]">@lang('common.beritaseputarpolitekniktakumi')</p>
@@ -182,7 +181,7 @@
         <div class="container grid grid-cols-1 md:grid-cols-5 gap-5 md:gap-10 mt-10">
 
             <div
-                class="relative h-[200px] md:h-[300px] col-span-1 md:col-span-3 flex justify-center items-center rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+                class="relative h-[200px] md:h-[400px] col-span-1 md:col-span-3 flex justify-center items-center rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
                 <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     class="w-full h-full object-cover rounded-lg">
                 <div class="absolute left-0 bottom-0 bg-black p-3 md:p-5 w-full rounded-b-lg bg-opacity-40">
@@ -228,8 +227,135 @@
             </a>
         </div>
 
+    </div> --}}
+    <div class="mt-10">
+        <div class="text-center">
+            <h1 class="text-3xl md:text-5xl text-primary font-bold">
+                Berita Terbaru
+            </h1>
+            <p class="text-sm md:text-lg text-[#646464]">
+                Informasi terbaru dari Politeknik Takumi
+            </p>
+        </div>
+        
+        <div class="container mt-10">
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                <!-- Berita 1 -->
+                <div class="w-full">
+                    <div class="w-full h-52 md:h-[345px] rounded-lg relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1599583863916-e06c29087f51?q=80&w=1884&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="" class="w-full h-full object-cover rounded-lg" />
+                        <div
+                            class="absolute inset-0 flex flex-col justify-end px-3 md:px-4 py-3 md:py-4 bg-gradient-to-t from-black via-transparent to-transparent">
+                            <p class="text-white text-base md:text-xl font-bold mb-2 md:mb-3">
+                                Mahasiswa Takumi Ciptakan Inovasi Terbaru di Bidang Energi Terbarukan
+                            </p>
+                            <div class="flex justify-between items-center text-white">
+                                <div class="flex gap-1 md:gap-2 items-center">
+                                    <img src="{{ asset('assets/jam.svg') }}" alt="" class="w-3 md:w-4 h-3 md:h-4" />
+                                    <p class="text-xs md:text-base">Kamis, 10 Oktober 2022</p>
+                                </div>
+                                <div class="">
+                                    <a href="#" class="flex items-center text-xs md:text-base">
+                                        Baca Selengkapnya
+                                        <img src="{{ asset('assets/arrow.svg') }}" alt="" class="w-3 md:w-5" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Berita 2 -->
+                <div class="w-full">
+                    <div class="w-full h-52 md:h-[345px] rounded-lg relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1599583863916-e06c29087f51?q=80&w=1884&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="" class="w-full h-full object-cover rounded-lg" />
+                        <div
+                            class="absolute inset-0 flex flex-col justify-end px-3 md:px-4 py-3 md:py-4 bg-gradient-to-t from-black via-transparent to-transparent">
+                            <p class="text-white text-base md:text-xl font-bold mb-2 md:mb-3">
+                                Dosen Takumi Temukan Jenis Bakteri Baru yang Potensial untuk Bidang Medis
+                            </p>
+                            <div class="flex justify-between items-center text-white">
+                                <div class="flex gap-1 md:gap-2 items-center">
+                                    <img src="{{ asset('assets/jam.svg') }}" alt="" class="w-3 md:w-4 h-3 md:h-4" />
+                                    <p class="text-xs md:text-base">Kamis, 10 Oktober 2022</p>
+                                </div>
+                                <div class="">
+                                    <a href="#" class="flex items-center text-xs md:text-base">
+                                        Baca Selengkapnya
+                                        <img src="{{ asset('assets/arrow.svg') }}" alt="" class="w-3 md:w-5" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Berita 3 -->
+                <div class="w-full">
+                    <div class="w-full h-52 md:h-[345px] rounded-lg relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1599583863916-e06c29087f51?q=80&w=1884&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="" class="w-full h-full object-cover rounded-lg" />
+                        <div
+                            class="absolute inset-0 flex flex-col justify-end px-3 md:px-4 py-3 md:py-4 bg-gradient-to-t from-black via-transparent to-transparent">
+                            <p class="text-white text-base md:text-xl font-bold mb-2 md:mb-3">
+                                Kisah Wayan: Dari Perumahan Menuju Prestasi di Politeknik Takumi
+                            </p>
+                            <div class="flex justify-between items-center text-white">
+                                <div class="flex gap-1 md:gap-2 items-center">
+                                    <img src="{{ asset('assets/jam.svg') }}" alt="" class="w-3 md:w-4 h-3 md:h-4" />
+                                    <p class="text-xs md:text-base">Kamis, 10 Oktober 2022</p>
+                                </div>
+                                <div class="">
+                                    <a href="#" class="flex items-center text-xs md:text-base">
+                                        Baca Selengkapnya
+                                        <img src="{{ asset('assets/arrow.svg') }}" alt="" class="w-3 md:w-5" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Berita 4 -->
+                <div class="w-full">
+                    <div class="w-full h-52 md:h-[345px] rounded-lg relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1599583863916-e06c29087f51?q=80&w=1884&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="" class="w-full h-full object-cover rounded-lg" />
+                        <div
+                            class="absolute inset-0 flex flex-col justify-end px-3 md:px-4 py-3 md:py-4 bg-gradient-to-t from-black via-transparent to-transparent">
+                            <p class="text-white text-base md:text-xl font-bold mb-2 md:mb-3">
+                                Politeknik Takumi Gelar Lomba Inovasi Tingkat Nasional
+                            </p>
+                            <div class="flex justify-between items-center text-white">
+                                <div class="flex gap-1 md:gap-2 items-center">
+                                    <img src="{{ asset('assets/jam.svg') }}" alt="" class="w-3 md:w-4 h-3 md:h-4" />
+                                    <p class="text-xs md:text-base">Kamis, 10 Oktober 2022</p>
+                                </div>
+                                <div class="">
+                                    <a href="#" class="flex items-center text-xs md:text-base">
+                                        Baca Selengkapnya
+                                        <img src="{{ asset('assets/arrow.svg') }}" alt="" class="w-3 md:w-5" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tombol Selengkapnya -->
+            <div class="mt-10 text-center">
+                <a href=""
+                    class="bg-primary text-white px-6 py-2 rounded-3xl text-sm hover:outline hover:outline-primary hover:bg-transparent hover:text-primary inline-block hover:translate-y-1 transition-all duration-300">
+                    <span>Selengkapnya</span>
+                    <i class='bx bx-chevron-right text-lg align-middle'></i>
+                </a>
+            </div>
+        </div>
     </div>
-    </div>
+    
     {{-- Takumi News --}}
 
     {{-- Akademik --}}
@@ -489,65 +615,53 @@
                     Proyek dan Penelitian
                 </h1>
                 <p class="text-sm md:text-lg text-[#646464]">
-                    Proyek dan penelitian yang dilakukan oleh Mahasiswa dan Dosen
-                    Politeknik Takumi
+                    Proyek dan penelitian yang dilakukan oleh Mahasiswa dan Dosen Politeknik Takumi
                 </p>
             </div>
-
+    
             <!-- Proyek Mahasiswa -->
-            <div class="grid grid-cols-1 md:grid-cols-2 bg-white rounded-lg shadow-lg mb-6">
-                <div class="w-full h-[250px] md:h-[450px]">
+            <div class="grid grid-cols-1 md:grid-cols-2 bg-white rounded-lg shadow-lg mb-6 gap-6">
+                <div class="w-full h-[250px] md:h-[428px]">
                     <img src="https://images.unsplash.com/photo-1596658591534-591d75e2f2f7?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="" class="w-full h-full object-cover rounded-l-lg" />
+                        alt="Proyek Mahasiswa" class="w-full h-full object-cover rounded-l-lg" />
                 </div>
-                <div class="py-5 px-7 text-[#646464]">
+                <div class="py-5 px-6 md:px-12 text-[#646464]">
                     <p class="text-sm md:text-base">Proyek Mahasiswa</p>
                     <h1 class="text-xl md:text-2xl font-bold text-primary">
                         Penerapan Teknologi IoT untuk Optimalisasi Sistem Irigasi Pertanian Cerdas
                     </h1>
                     <p class="text-sm md:text-base">10 Oktober 2024</p>
                     <p class="mt-5 text-sm md:text-base">
-                        Penelitian ini bersifat terapan dan menantang mahasiswa untuk
-                        merancang serta mengembangkan sistem berbasis IoT. Sifat penelitian
-                        ini sesuai untuk mahasiswa karena teknologi IoT sudah tersedia dan
-                        penelitian lebih berfokus pada implementasi serta pengujian
-                        fungsionalitas. Ini memberikan pengalaman praktis bagi mahasiswa
-                        dalam menyelesaikan masalah nyata di bidang pertanian dengan teknologi
-                        modern.
+                        Penelitian ini bersifat terapan dan menantang mahasiswa untuk merancang serta mengembangkan sistem berbasis IoT.
+                        Ini memberikan pengalaman praktis dalam menyelesaikan masalah nyata di bidang pertanian dengan teknologi modern.
                     </p>
                     <div class="mt-6">
                         <a href="" class="text-primary text-sm md:text-base">Baca Selengkapnya</a>
                     </div>
                 </div>
             </div>
-
+    
             <!-- Proyek Dosen -->
-            <div class="grid grid-cols-1 md:grid-cols-2 bg-white rounded-lg shadow-lg mb-6">
-                <div class="w-full h-[250px] md:h-[450px]">
+            <div class="grid grid-cols-1 md:grid-cols-2 bg-white rounded-lg shadow-lg mb-6 gap-6">
+                <div class="w-full h-[250px] md:h-[428px]">
                     <img src="https://images.unsplash.com/photo-1596658591534-591d75e2f2f7?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="" class="w-full h-full object-cover rounded-l-lg" />
+                        alt="Proyek Dosen" class="w-full h-full object-cover rounded-l-lg" />
                 </div>
-                <div class="py-5 px-7 text-[#646464]">
-                    <p class="text-sm md:text-base">Proyek Mahasiswa</p>
+                <div class="py-5 px-6 md:px-12 text-[#646464]">
+                    <p class="text-sm md:text-base">Proyek Dosen</p>
                     <h1 class="text-xl md:text-2xl font-bold text-primary">
-                        Penerapan Teknologi IoT untuk Optimalisasi Sistem Irigasi Pertanian Cerdas
+                        Riset Penerapan IoT untuk Pemantauan Lingkungan Hidup
                     </h1>
-                    <p class="text-sm md:text-base">10 Oktober 2024</p>
+                    <p class="text-sm md:text-base">15 Oktober 2024</p>
                     <p class="mt-5 text-sm md:text-base">
-                        Penelitian ini bersifat terapan dan menantang mahasiswa untuk
-                        merancang serta mengembangkan sistem berbasis IoT. Sifat penelitian
-                        ini sesuai untuk mahasiswa karena teknologi IoT sudah tersedia dan
-                        penelitian lebih berfokus pada implementasi serta pengujian
-                        fungsionalitas. Ini memberikan pengalaman praktis bagi mahasiswa
-                        dalam menyelesaikan masalah nyata di bidang pertanian dengan teknologi
-                        modern.
+                        Riset ini menekankan pada pengembangan sensor berbasis IoT untuk memantau kualitas air, udara, dan suhu di daerah-daerah yang rentan terhadap perubahan lingkungan drastis.
                     </p>
                     <div class="mt-6">
                         <a href="" class="text-primary text-sm md:text-base">Baca Selengkapnya</a>
                     </div>
                 </div>
             </div>
-
+    
             <div class="mt-10 text-center">
                 <a href=""
                     class="bg-primary text-white px-8 py-2 rounded-3xl text-sm hover:outline hover:outline-primary hover:bg-transparent hover:text-primary inline-block hover:translate-y-1 transition-all duration-300">
@@ -557,6 +671,7 @@
             </div>
         </div>
     </div>
+    
     {{-- Penelitian --}}
 
     {{-- Upcoming events --}}
@@ -842,7 +957,8 @@
                             dasar-dasar pemrograman Python. Melalui kegiatan ini, mahasiswa akan diajarkan...
                         </p>
                         <div class="mt-8 md:mt-10">
-                            <a href="" class="text-[#646464] hover:text-primary">Baca
+                            <a href=""
+                                class="text-[#646464] hover:text-primary inline-block hover:translate-x-1 transition-all duration-700">Baca
                                 Selengkapnya <i class='bx bx-chevron-right text-lg align-middle'></i></a>
                         </div>
                     </div>
@@ -864,7 +980,8 @@
                             Takumi bekerja sama dengan Palang Merah Indonesia (PMI). Mahasiswa...
                         </p>
                         <div class="mt-8 md:mt-10">
-                            <a href="" class="text-[#646464] hover:text-primary">Baca
+                            <a href=""
+                                class="text-[#646464] hover:text-primary inline-block hover:translate-x-1 transition-all duration-700">Baca
                                 Selengkapnya <i class='bx bx-chevron-right text-lg align-middle'></i></a>
                         </div>
                     </div>
@@ -886,7 +1003,8 @@
                             jurusan melalui olahraga. Setiap jurusan di Politeknik Takumi akan membentuk tim futs...
                         </p>
                         <div class="mt-8 md:mt-10">
-                            <a href="" class="text-[#646464] hover:text-primary">Baca
+                            <a href=""
+                                class="text-[#646464] hover:text-primary inline-block hover:translate-x-1 transition-all duration-700">Baca
                                 Selengkapnya <i class='bx bx-chevron-right text-lg align-middle'></i></a>
                         </div>
                     </div>
@@ -899,7 +1017,10 @@
     {{-- Non Akademik --}}
     <div class="bg-primary w-full h-auto mt-20">
         <div class="container py-5">
-            <h1 class="py-5 text-4xl md:text-5xl font-bold text-white text-center mb-5">@lang('common.non')</h1>
+            <div class="mb-5">
+                <h1 class=" text-4xl md:text-5xl font-bold text-white text-center ">@lang('common.non')</h1>
+                <p class="text-white text-center">Kegiatan non akademik Politeknik Takumi</p>
+            </div>
             <div class="grid grid-cols-1 mb-5 md:grid-cols-2 gap-8">
                 <div class="w-full h-auto">
                     <img src="https://plus.unsplash.com/premium_photo-1710467004560-4e82fe4c80e9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -920,8 +1041,7 @@
                     <p class="text-white mb-5">
                         @lang('common.hackathon21')
                     </p>
-                    <a href=""
-                        class="text-primary inline-block hover:translate-x-1 transition-all duration-700">
+                    <a href="" class="text-white inline-block hover:translate-x-1 transition-all duration-700">
                         <span>@lang('common.readmore')</span>
                         <i class='bx bx-chevron-right text-lg align-middle'></i>
                     </a>
