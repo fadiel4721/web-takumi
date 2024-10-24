@@ -78,7 +78,7 @@
                 <i class='bx bx-menu text-3xl'></i>
             </div>
         </div>
-        <div id="navbar2" class="md:py-4 bg-white text-black">
+        <div id="navbar2" class="md:py-5 bg-white text-black">
             <nav class="hidden md:flex justify-center">
                 <ul id="navbar" class="flex justify-center gap-10">
                     <li><a href="" class="relative group">@lang('common.news')
