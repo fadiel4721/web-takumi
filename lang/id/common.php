@@ -91,4 +91,6 @@ return [
     'hackathon23' => 'Peta',
     'hackathon24' => 'Cari Website Takumi...',
     'ppmb' => 'Pendaftaran Mahasiswa Baru',
+    'texnav' => '"Politeknik Takumi mendorong mahasiswa untuk terus mengembangkan diri dan berkompetisi di tingkat nasional maupun internasional. Dengan fasilitas modern dan pengajar yang berkualitas, kami siap mencetak lulusan yang siap menghadapi tantangan global. “Jadilah bagian dari keluarga besar Takumi dan raih prestasi gemilang."',
+    'nonin' => 'Kegiatan non akademik Politeknik Takumi',
 ];

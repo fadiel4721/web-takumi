@@ -22,7 +22,7 @@
                             <img src="{{ asset('assets/england.png') }}" alt="English" class="w-6 h-6" />
                             <span>English</span>
                         </li>
-                        <li class="flex py-2 items-center gap-2 cursor-pointer px-4 {{ session()->get('locale') == 'id' ? 'bg-gray-200' : '' }}" 
+                        <li class="flex py-2 items-center gap-2 cursor-pointer px-4 {{ session()->get('locale') == 'id' ? 'bg-gray-200' : '' }}"
                             onclick="changeLanguage('id', 'Bahasa Indonesia', 'assets/indonesia.svg')">
                             <img src="{{ asset('assets/indonesia.svg') }}" alt="Bahasa Indonesia" class="w-6 h-6" />
                             <span>Indonesia</span>
@@ -35,7 +35,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="hidden md:flex gap-6">
+            <div class="hidden md:flex gap-6 items-center">
                 <a href="#" class="relative group"><span class="font-bold"></span> @lang('common.mahasiswa') <span
                         class="absolute -top-5 left-1/2 w-0 h-[5px] rounded-b-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span></a>
                 <a href="#" class="relative group">@lang('common.staf&fakultas') <span
@@ -46,12 +46,12 @@
                         class="absolute -top-5 left-1/2 w-0 h-[5px] rounded-b-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span></a>
                 <a href="#" class="relative group">@lang('common.alumni') <span
                         class="absolute -top-5 left-1/2 w-0 h-[5px] rounded-b-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span></a>
-            </div>
-            <div class="flex items-center gap-6">
-                <a href="javascript:void(0)" id="search-btn" class="flex items-center gap-2">
-                    <i class='bx bx-search'></i> @lang('common.search')
-                </a>
+                <div class="flex items-center gap-6 px-8 py-2 bg-white rounded text-primary">
+                    <a href="javascript:void(0)" id="search-btn" class="flex items-center gap-2">
+                        <i class='bx bx-search'></i> @lang('common.search')
+                    </a>
 
+                </div>
             </div>
             <div id="search-modal"
                 class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50 hidden ">
@@ -131,19 +131,9 @@
                             
                         </a></li> --}}
                     <li><a href=""
-                            class="relative group bg-primary px-4 py-2 text-sm rounded-lg text-white">@lang('common.pendaftaran')
+                            class="relative group bg-primary px-6 py-3 text-sm rounded-lg text-white">@lang('common.pendaftaran')
                         </a></li>
                     <li>
-                        {{-- <div class="relative inline-block text-left">
-                                <form class="d-flex">
-                                    <select class="form-select changeLang bg-gray-200 text-gray-800 border border-black rounded">
-                                        <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>English</option>
-                                        <option value="id" {{ session()->get('locale') == 'id' ? 'selected' : '' }}>Bahasa Indonesia</option>
-                                        <option value="ja" {{ session()->get('locale') == 'ja' ? 'selected' : '' }}>日本語</option>
-                                    </select>
-                                </form>
-                            </div> --}}
-
                     </li>
                 </ul>
             </nav>

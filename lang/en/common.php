@@ -13,7 +13,7 @@ return [
     'akademik' => 'Academic',
     'penelitian' => 'Research',
     'campuslife' => 'Campus Life',
-    'pendaftaran' => 'Registration',
+    'pendaftaran' => 'Admission',
     'profile' => 'Profile',
     'search' => 'Search',
     'poltek' => 'Takumi Polytechnic encourages students to continue developing themselves and competing at the national and international levels. With modern facilities and qualified instructors, we are ready to produce graduates who are prepared to face global challenges. Become part of the big Takumi family and achieve outstanding accomplishments."',
@@ -87,4 +87,6 @@ return [
     'hackathon23' => 'Maps',
     'hackathon24' => 'Search Takumi Website...',
     'ppmb' => 'New Student Enrollment',
+    'texnav'=> '"Politeknik Takumi encourages students to continuously develop themselves and compete at both national and international levels. With modern facilities and qualified instructors, we are ready to produce graduates who are prepared to face global challenges. "Become a part of the Takumi family and achieve outstanding success."',
+    'nonin' => 'Non-Academic Activities at Politeknik Takumi',
 ];
