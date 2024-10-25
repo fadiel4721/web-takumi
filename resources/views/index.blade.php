@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="Politeknik, Politeknik Cikarang, Politeknik Takumi, Takumi, Kampus, Kampus Takumi, Kampus Cikarang, Cikarang, Kampus Terbaik, Kampus Terbaik di Jawa Barat, Kampus Terbaik di Cikarang, Kampus Terbaik di Bekasi, Politeknik Terbaik, Politeknik Terbaik di Jawa Barat, Politeknik Terbaik di Cikarang, Politeknik Terbaik di Bekasi, Penerimaan Mahasiswa Baru, Mahasiswa Takumi, Mahasiswa, Teknik Informatika, Prodi Teknik Informatika, Prodi TI, Teknik Informatika D3, Mekatronika, Mekatronika D3, Prodi Mekatronika, Mekatro, Bahasa Jepang, Bahasa Jepang D3, Prodi Bahasa Jepang, Digital Bisnis, Prodi Digital Bisnis, Sarjana Terapan, Sarjana Terapan Terbaik">
     <title>Politeknik Takumi</title>
-    <link rel="shortcut icon" href="{{ asset('assets/logo-tangan.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('images/logo-tangan-takumi.png') }}" type="image/x-icon">
 
     {{--Jquery--}}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
