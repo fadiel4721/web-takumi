@@ -22,7 +22,7 @@
                             <img src="{{ asset('assets/england.png') }}" alt="English" class="w-6 h-6" />
                             <span>English</span>
                         </li>
-                        <li class="flex py-2 items-center gap-2 cursor-pointer px-4 {{ session()->get('locale') == 'id' ? 'bg-gray-200' : '' }}" 
+                        <li class="flex py-2 items-center gap-2 cursor-pointer px-4 {{ session()->get('locale') == 'id' ? 'bg-gray-200' : '' }}"
                             onclick="changeLanguage('id', 'Bahasa Indonesia', 'assets/indonesia.svg')">
                             <img src="{{ asset('assets/indonesia.svg') }}" alt="Bahasa Indonesia" class="w-6 h-6" />
                             <span>Indonesia</span>
@@ -35,7 +35,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="hidden md:flex gap-6">
+            <div class="hidden md:flex gap-6 items-center">
                 <a href="#" class="relative group"><span class="font-bold"></span> @lang('common.mahasiswa') <span
                         class="absolute -top-5 left-1/2 w-0 h-[5px] rounded-b-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span></a>
                 <a href="#" class="relative group">@lang('common.staf&fakultas') <span
@@ -46,12 +46,12 @@
                         class="absolute -top-5 left-1/2 w-0 h-[5px] rounded-b-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span></a>
                 <a href="#" class="relative group">@lang('common.alumni') <span
                         class="absolute -top-5 left-1/2 w-0 h-[5px] rounded-b-lg bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span></a>
-            </div>
-            <div class="flex items-center gap-6">
-                <a href="javascript:void(0)" id="search-btn" class="flex items-center gap-2">
-                    <i class='bx bx-search'></i> @lang('common.search')
-                </a>
+                <div class="flex items-center gap-6 px-8 py-2 bg-white rounded text-primary">
+                    <a href="javascript:void(0)" id="search-btn" class="flex items-center gap-2">
+                        <i class='bx bx-search'></i> @lang('common.search')
+                    </a>
 
+                </div>
             </div>
             <div id="search-modal"
                 class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50 hidden ">
@@ -78,7 +78,7 @@
                 <i class='bx bx-menu text-3xl'></i>
             </div>
         </div>
-        <div id="navbar2" class="md:py-4 bg-white text-black">
+        <div id="navbar2" class="md:py-5 bg-white text-black">
             <nav class="hidden md:flex justify-center">
                 <ul id="navbar" class="flex justify-center gap-10">
                     <li><a href="" class="relative group">@lang('common.news')
@@ -94,26 +94,23 @@
                         <div class="relative">
                             <div class="flex items-center gap-1 cursor-pointer"
                                 onclick="toggleDropdown('programDropdown')">
-                                Program Studi <i class="bx bx-chevron-down"></i>
+                               @lang('common.prodi') <i class="bx bx-chevron-down"></i>
                             </div>
                             <ul id="programDropdown"
                                 class="hidden absolute bg-white text-black py-2 mt-2 rounded shadow-lg z-50 min-w-[200px]">
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 hover:bg-primary hover:text-white">Teknologi
-                                        Informasi</a>
+                                        class="block px-4 py-2 hover:bg-primary hover:text-white">@lang('common.Ti')</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">Bisnis
-                                        Digital</a>
+                                    <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">@lang('common.Bd')</a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 hover:bg-primary hover:text-white">Mekatronika</a>
+                                        class="block px-4 py-2 hover:bg-primary hover:text-white">@lang('common.Mk')</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">Bahasa
-                                        Jepang</a>
+                                    <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">@lang('common.Bj')</a>
                                 </li>
                             </ul>
                         </div>
@@ -131,19 +128,9 @@
                             
                         </a></li> --}}
                     <li><a href=""
-                            class="relative group bg-primary px-4 py-2 text-sm rounded-lg text-white">@lang('common.pendaftaran')
+                            class="relative group bg-primary px-6 py-3 text-sm rounded-lg text-white">@lang('common.pendaftaran')
                         </a></li>
                     <li>
-                        {{-- <div class="relative inline-block text-left">
-                                <form class="d-flex">
-                                    <select class="form-select changeLang bg-gray-200 text-gray-800 border border-black rounded">
-                                        <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>English</option>
-                                        <option value="id" {{ session()->get('locale') == 'id' ? 'selected' : '' }}>Bahasa Indonesia</option>
-                                        <option value="ja" {{ session()->get('locale') == 'ja' ? 'selected' : '' }}>日本語</option>
-                                    </select>
-                                </form>
-                            </div> --}}
-
                     </li>
                 </ul>
             </nav>
@@ -152,49 +139,46 @@
 
     <div x-show="isOpen" class="md:hidden w-full bg-white text-black text-lg fixed z-10 mt-16">
         <div class="grid grid-cols-2">
-            <div class="flex justify-center items-center p-5 border-b"><a href="#">News</a></div>
-            <div class="flex justify-center items-center p-5 border-b"><a href="#">Events</a></div>
-            <div class="flex justify-center items-center p-5 border-b"><a href="#">Akademik</a></div>
+            <div class="flex justify-center items-center p-5 border-b"><a href="#">@lang('common.news')</a></div>
+            <div class="flex justify-center items-center p-5 border-b"><a href="#">@lang('common.event')</a></div>
+            <div class="flex justify-center items-center p-5 border-b"><a href="#">@lang('common.akademik')</a></div>
             <div class="flex justify-center items-center p-5 border-b">
                 <div class="relative">
                     <div class="flex items-center gap-1 cursor-pointer" onclick="toggleDropdown('programDropdown')">
-                        Program Studi <i class="bx bx-chevron-down"></i>
+                        @lang('common.prodi') <i class="bx bx-chevron-down"></i>
                     </div>
                     <ul id="programDropdown"
                         class="hidden absolute bg-white text-black py-2 mt-2 rounded shadow-lg z-50 min-w-[200px]">
                         <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">Teknologi
-                                Informasi</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">@lang('common.Ti')</a>
                         </li>
                         <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">Bisnis
-                                Digital</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">@lang('common.Bd')</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="block px-4 py-2 hover:bg-primary hover:text-white">Mekatronika</a>
+                                class="block px-4 py-2 hover:bg-primary hover:text-white">@lang('common.Mk')</a>
                         </li>
                         <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">Bahasa
-                                Jepang</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">@lang('common.Bj')</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="flex justify-center items-center p-5 border-b"><a href="#">Penelitian</a></div>
-            <div class="flex justify-center items-center p-5 border-b"><a href="#">Campus Life</a></div>
-            <div class="flex justify-center items-center p-5 border-b"><a href="#">Pendaftaran</a></div>
-            <div class="flex justify-center items-center p-5 border-b"><a href="#">Profile</a></div>
+            <div class="flex justify-center items-center p-5 border-b"><a href="#">@lang('common.penelitian')</a></div>
+            <div class="flex justify-center items-center p-5 border-b"><a href="#">@lang('common.campuslife')</a></div>
+            <div class="flex justify-center items-center p-5 border-b"><a href="#">@lang('common.pendaftaran')</a></div>
+            <div class="flex justify-center items-center p-5 border-b"><a href="#">@lang('common.profile')</a></div>
         </div>
         <div class="w-full pt-4">
             <h1 class="font-bold text-lg text-center">Informasi:</h1>
             <div class="flex justify-center overflow-x-auto gap-10">
                 <ul class="flex items-center py-5 px-5">
-                    <li class="mx-2"><a href="#" class="text-sm">Mahasiswa</a></li>
-                    <li class="mx-2"><a href="#" class="text-sm">Staf & Fakultas</a></li>
-                    <li class="mx-2"><a href="#" class="text-sm">Keluarga</a></li>
-                    <li class="mx-2"><a href="#" class="text-sm">Pengunjung</a></li>
-                    <li class="mx-2"><a href="#" class="text-sm">Alumni</a></li>
+                    <li class="mx-2"><a href="#" class="text-sm">@lang('common.mahasiswa')</a></li>
+                    <li class="mx-2"><a href="#" class="text-sm">@lang('common.staf&fakultas')</a></li>
+                    <li class="mx-2"><a href="#" class="text-sm">@lang('common.orangtua')</a></li>
+                    <li class="mx-2"><a href="#" class="text-sm">@lang('common.pengunjung')</a></li>
+                    <li class="mx-2"><a href="#" class="text-sm">@lang('common.alumni')</a></li>
                 </ul>
             </div>
             <a href="javascript:void(0)" id="search-btn" class="hidden md:flex items-center gap-2">
