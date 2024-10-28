@@ -94,26 +94,23 @@
                         <div class="relative">
                             <div class="flex items-center gap-1 cursor-pointer"
                                 onclick="toggleDropdown('programDropdown')">
-                                Program Studi <i class="bx bx-chevron-down"></i>
+                               @lang('common.prodi') <i class="bx bx-chevron-down"></i>
                             </div>
                             <ul id="programDropdown"
                                 class="hidden absolute bg-white text-black py-2 mt-2 rounded shadow-lg z-50 min-w-[200px]">
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 hover:bg-primary hover:text-white">Teknologi
-                                        Informasi</a>
+                                        class="block px-4 py-2 hover:bg-primary hover:text-white">@lang('common.Ti')</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">Bisnis
-                                        Digital</a>
+                                    <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">@lang('common.Bd')</a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 hover:bg-primary hover:text-white">Mekatronika</a>
+                                        class="block px-4 py-2 hover:bg-primary hover:text-white">@lang('common.Mk')</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">Bahasa
-                                        Jepang</a>
+                                    <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">@lang('common.Bj')</a>
                                 </li>
                             </ul>
                         </div>
@@ -142,49 +139,46 @@
 
     <div x-show="isOpen" class="md:hidden w-full bg-white text-black text-lg fixed z-10 mt-16">
         <div class="grid grid-cols-2">
-            <div class="flex justify-center items-center p-5 border-b"><a href="#">News</a></div>
-            <div class="flex justify-center items-center p-5 border-b"><a href="#">Events</a></div>
-            <div class="flex justify-center items-center p-5 border-b"><a href="#">Akademik</a></div>
+            <div class="flex justify-center items-center p-5 border-b"><a href="#">@lang('common.news')</a></div>
+            <div class="flex justify-center items-center p-5 border-b"><a href="#">@lang('common.event')</a></div>
+            <div class="flex justify-center items-center p-5 border-b"><a href="#">@lang('common.akademik')</a></div>
             <div class="flex justify-center items-center p-5 border-b">
                 <div class="relative">
                     <div class="flex items-center gap-1 cursor-pointer" onclick="toggleDropdown('programDropdown')">
-                        Program Studi <i class="bx bx-chevron-down"></i>
+                        @lang('common.prodi') <i class="bx bx-chevron-down"></i>
                     </div>
                     <ul id="programDropdown"
                         class="hidden absolute bg-white text-black py-2 mt-2 rounded shadow-lg z-50 min-w-[200px]">
                         <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">Teknologi
-                                Informasi</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">@lang('common.Ti')</a>
                         </li>
                         <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">Bisnis
-                                Digital</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">@lang('common.Bd')</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="block px-4 py-2 hover:bg-primary hover:text-white">Mekatronika</a>
+                                class="block px-4 py-2 hover:bg-primary hover:text-white">@lang('common.Mk')</a>
                         </li>
                         <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">Bahasa
-                                Jepang</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">@lang('common.Bj')</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="flex justify-center items-center p-5 border-b"><a href="#">Penelitian</a></div>
-            <div class="flex justify-center items-center p-5 border-b"><a href="#">Campus Life</a></div>
-            <div class="flex justify-center items-center p-5 border-b"><a href="#">Pendaftaran</a></div>
-            <div class="flex justify-center items-center p-5 border-b"><a href="#">Profile</a></div>
+            <div class="flex justify-center items-center p-5 border-b"><a href="#">@lang('common.penelitian')</a></div>
+            <div class="flex justify-center items-center p-5 border-b"><a href="#">@lang('common.campuslife')</a></div>
+            <div class="flex justify-center items-center p-5 border-b"><a href="#">@lang('common.pendaftaran')</a></div>
+            <div class="flex justify-center items-center p-5 border-b"><a href="#">@lang('common.profile')</a></div>
         </div>
         <div class="w-full pt-4">
             <h1 class="font-bold text-lg text-center">Informasi:</h1>
             <div class="flex justify-center overflow-x-auto gap-10">
                 <ul class="flex items-center py-5 px-5">
-                    <li class="mx-2"><a href="#" class="text-sm">Mahasiswa</a></li>
-                    <li class="mx-2"><a href="#" class="text-sm">Staf & Fakultas</a></li>
-                    <li class="mx-2"><a href="#" class="text-sm">Keluarga</a></li>
-                    <li class="mx-2"><a href="#" class="text-sm">Pengunjung</a></li>
-                    <li class="mx-2"><a href="#" class="text-sm">Alumni</a></li>
+                    <li class="mx-2"><a href="#" class="text-sm">@lang('common.mahasiswa')</a></li>
+                    <li class="mx-2"><a href="#" class="text-sm">@lang('common.staf&fakultas')</a></li>
+                    <li class="mx-2"><a href="#" class="text-sm">@lang('common.orangtua')</a></li>
+                    <li class="mx-2"><a href="#" class="text-sm">@lang('common.pengunjung')</a></li>
+                    <li class="mx-2"><a href="#" class="text-sm">@lang('common.alumni')</a></li>
                 </ul>
             </div>
             <a href="javascript:void(0)" id="search-btn" class="hidden md:flex items-center gap-2">

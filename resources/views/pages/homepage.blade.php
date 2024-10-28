@@ -112,7 +112,7 @@
         <a href="">
             <div class="bg-primary w-full absolute bottom-0 py-2 text-center">
                 <h1 class="text-white">
-                    Tentang Takumi
+                    @lang('common.tentangpolitekniktakumi')
                     <span class="animate-bounce inline-block">
                         <i class='bx bx-down-arrow-alt'></i>
                     </span>
@@ -131,35 +131,25 @@
                 <!-- Visi Section -->
                 <div class="flex bg-primary rounded-r-xl mb-4">
                     <div class="w-full px-4 py-4 text-white">
-                        <h1 class="text-3xl md:text-4xl underline mb-4 font-semibold">Visi</h1>
+                        <h1 class="text-3xl md:text-4xl underline mb-4 font-semibold">@lang('common.visi')</h1>
                         <p class="description text-sm ">
-                            Sebagai lembaga pendidikan tinggi terkemuka di bidang teknologi terapan yang menghasilkan
-                            lulusan berkarakter dan kompeten yang mampu memberikan kontribusi kepada masyarakat dan
-                            lingkungan
-                            melalui pembangunan berkelanjutan serta memiliki daya saing global.
+                            @lang('common.menjadi')
                         </p>
                     </div>
                 </div>
                 <!-- Misi Section -->
                 <div class="flex bg-primary rounded-r-xl">
                     <div class="w-full px-4 py-4 text-white">
-                        <h1 class="text-3xl md:text-4xl underline mb-4 font-semibold">Misi</h1>
+                        <h1 class="text-3xl md:text-4xl underline mb-4 font-semibold">@lang('common.misi')</h1>
                         <ol class="description list-decimal list-inside space-y-2 text-sm ">
                             <li>
-                                Menyelenggarakan pendidikan tinggi vokasi dengan model pembelajaran Product Based -
-                                Learning
-                                by Doing (PBLD) yang unggul, ber-integritas dan adaptif terhadap kebutuhan tenaga kerja
-                                dunia
-                                usaha, industri, dan kewirausahaan dalam lingkup nasional maupun internasional.
+                               @lang('common.Misi1')
                             </li>
                             <li>
-                                Menyelenggarakan penelitian dan pengabdian kepada masyarakat yang berorientasi pada ilmu
-                                pengetahuan, teknologi, dan bisnis yang memperhatikan keseimbangan lingkungan.
+                               @lang('common.Misi2')
                             </li>
                             <li>
-                                Menyelenggarakan kerja sama dengan berbagai institusi dalam dan luar negeri untuk
-                                perkembangan
-                                pendidikan tinggi vokasi yang berorientasi industri.
+                              @lang('common.Misi3')
                             </li>
                         </ol>
                     </div>
@@ -235,10 +225,10 @@
     <div class="mt-10 bg-[#F2FAFF] py-10">
         <div class="text-center">
             <h1 class="text-3xl md:text-5xl text-primary font-bold">
-                Berita Terbaru
+                @lang('common.terbaru')
             </h1>
             <p class="text-sm md:text-lg text-[#646464]">
-                Informasi terbaru dari Politeknik Takumi
+               @lang('common.ter')
             </p>
         </div>
 
@@ -252,17 +242,17 @@
                         <div
                             class="absolute inset-0 flex flex-col justify-end px-3 md:px-4 py-3 md:py-4 bg-gradient-to-t from-black via-transparent to-transparent">
                             <p class="text-white text-base md:text-xl font-bold mb-2 md:mb-3">
-                                Kunjungan PT. Akagi ke Politeknik Takumi
+                                @lang('common.kunjungan')
                             </p>
                             <div class="flex justify-between items-center text-white">
                                 <div class="flex gap-1 md:gap-2 items-center">
                                     <img src="{{ asset('assets/jam.svg') }}" alt=""
                                         class="w-3 md:w-4 h-3 md:h-4" />
-                                    <p class="text-xs md:text-base">22 November 2023</p>
+                                    <p class="text-xs md:text-base">@lang('common.tanggal1')</p>
                                 </div>
                                 <div class="">
                                     <a href="#" class="flex items-center text-xs md:text-base">
-                                        Baca Selengkapnya
+                                       @lang('common.readmore')
                                         <img src="{{ asset('assets/arrow.svg') }}" alt="" class="w-3 md:w-5" />
                                     </a>
                                 </div>
@@ -279,17 +269,17 @@
                         <div
                             class="absolute inset-0 flex flex-col justify-end px-3 md:px-4 py-3 md:py-4 bg-gradient-to-t from-black via-transparent to-transparent">
                             <p class="text-white text-base md:text-xl font-bold mb-2 md:mb-3">
-                                Acara Penyerahan Beasiswa dari PT. Minori
+                                @lang('common.kunjungan2')
                             </p>
                             <div class="flex justify-between items-center text-white">
                                 <div class="flex gap-1 md:gap-2 items-center">
                                     <img src="{{ asset('assets/jam.svg') }}" alt=""
                                         class="w-3 md:w-4 h-3 md:h-4" />
-                                    <p class="text-xs md:text-base">12 Maret 2024</p>
+                                    <p class="text-xs md:text-base">@lang('common.tanggal2')</p>
                                 </div>
                                 <div class="">
                                     <a href="#" class="flex items-center text-xs md:text-base">
-                                        Baca Selengkapnya
+                                      @lang('common.readmore')
                                         <img src="{{ asset('assets/arrow.svg') }}" alt="" class="w-3 md:w-5" />
                                     </a>
                                 </div>
@@ -306,17 +296,17 @@
                         <div
                             class="absolute inset-0 flex flex-col justify-end px-3 md:px-4 py-3 md:py-4 bg-gradient-to-t from-black via-transparent to-transparent">
                             <p class="text-white text-base md:text-xl font-bold mb-2 md:mb-3">
-                                Penandatanganan Kerja Sama untuk Learning Factory
+                                @lang('common.kunjungan3')
                             </p>
                             <div class="flex justify-between items-center text-white">
                                 <div class="flex gap-1 md:gap-2 items-center">
                                     <img src="{{ asset('assets/jam.svg') }}" alt=""
                                         class="w-3 md:w-4 h-3 md:h-4" />
-                                    <p class="text-xs md:text-base">15 Mei 2024</p>
+                                    <p class="text-xs md:text-base">@lang('common.tanggal3')</p>
                                 </div>
                                 <div class="">
                                     <a href="#" class="flex items-center text-xs md:text-base">
-                                        Baca Selengkapnya
+                                       @lang('common.readmore')
                                         <img src="{{ asset('assets/arrow.svg') }}" alt="" class="w-3 md:w-5" />
                                     </a>
                                 </div>
@@ -333,17 +323,17 @@
                         <div
                             class="absolute inset-0 flex flex-col justify-end px-3 md:px-4 py-3 md:py-4 bg-gradient-to-t from-black via-transparent to-transparent">
                             <p class="text-white text-base md:text-xl font-bold mb-2 md:mb-3">
-                                Kunjungan Politeknik Takumi ke Kantor Lurah Desa Serang
+                               @lang('common.kunjungan4')
                             </p>
                             <div class="flex justify-between items-center text-white">
                                 <div class="flex gap-1 md:gap-2 items-center">
                                     <img src="{{ asset('assets/jam.svg') }}" alt=""
                                         class="w-3 md:w-4 h-3 md:h-4" />
-                                    <p class="text-xs md:text-base">5 September 2023</p>
+                                    <p class="text-xs md:text-base">@lang('common.tanggal4')</p>
                                 </div>
                                 <div class="">
                                     <a href="#" class="flex items-center text-xs md:text-base">
-                                        Baca Selengkapnya
+                                       @lang('common.readmore')
                                         <img src="{{ asset('assets/arrow.svg') }}" alt=""
                                             class="w-3 md:w-5" />
                                     </a>
@@ -358,7 +348,7 @@
             <div class="mt-10 text-center">
                 <a href=""
                     class="bg-primary text-white px-6 py-2 rounded-3xl text-sm hover:outline hover:outline-primary hover:bg-transparent hover:text-primary inline-block hover:translate-y-1 transition-all duration-300">
-                    <span>Selengkapnya</span>
+                    <span>@lang('common.readmore')</span>
                     <i class='bx bx-chevron-right text-lg align-middle'></i>
                 </a>
             </div>
@@ -497,15 +487,11 @@
             <div class="flex flex-col md:flex-row items-center gap-10">
                 <div class="w-full md:w-[50%]">
                     <h1 class="text-5xl mb-2 text-primary font-bold">
-                        Akademik
+                       @lang('common.akademik')
                     </h1>
                     <p class="text-[#646464] text-base">
-                        <span class="uppercase font-bold text-2xl text-[#646464]">Siap hadapi dunia kerja?</span>
-                        Program studi di Politeknik Takumi dirancang dengan
-                        mempertimbangkan kebutuhan industri. Kamu akan
-                        belajar langsung dari praktisi yang berpengalaman
-                        dan memiliki kesempatan untuk magang di perusahaan
-                        ternama.
+                        <span class="uppercase font-bold text-2xl text-[#646464]">@lang('common.hadapi')</span>
+                        @lang('common.kerja')
                     </p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full md:w-[50%]">
@@ -514,15 +500,13 @@
                             <img src="{{ asset('assets/img-prodi/TI.jpg') }}" alt=""
                                 class="object-cover h-full rounded-lg brightness-50">
                             <h1 class="absolute inset-0 flex items-center justify-center text-white font-bold">D3
-                                Teknologi
-                                Informasi</h1>
+                               @lang('common.Ti')</h1>
                         </div>
                         <div class="w-full h-auto relative">
                             <img src="{{ asset('assets/img-prodi/Bisnis-Digital.jpg') }}" alt=""
                                 class="object-cover h-full rounded-lg brightness-50">
                             <h1 class="absolute inset-0 flex items-center justify-center text-white font-bold">D4
-                                Bisnis
-                                Digital</h1>
+                               @lang('common.Bd')</h1>
                         </div>
                     </div>
                     <div>
@@ -530,15 +514,14 @@
                             <img src="{{ asset('assets/img-prodi/Mekatronika.jpg') }}" alt=""
                                 class="object-cover h-full rounded-lg brightness-50">
                             <h1 class="absolute inset-0 flex items-center justify-center text-white font-bold">D3
-                                Mekatronika
+                               @lang('common.Mk')
                             </h1>
                         </div>
                         <div class="w-full h-auto relative">
                             <img src="{{ asset('assets/img-prodi/Bahasa-Jepang.jpg') }}" alt=""
                                 class="object-cover h-full rounded-lg brightness-50">
                             <h1 class="absolute inset-0 flex items-center justify-center text-white font-bold">D3
-                                Bahasa
-                                Jepang</h1>
+                                @lang('common.Bj')</h1>
                         </div>
                     </div>
                 </div>
@@ -563,19 +546,17 @@
                         class="w-20 h-20 md:w-40 md:h-40 rounded-full object-cover" />
                     <p
                         class="text-center mt-4 w-full md:w-2/3 font-semibold text-lg md:text-4xl text-white pb-10 md:pb-40 px-4">
-                        夢は見るものではなく、叶えるものだ (Yume wa miru mono de wa naku, kanaeru mono da)
-                        "Mimpi bukanlah hanya untuk dilihat, tetapi untuk diwujudkan."
-                        Artinya: Penting untuk bertindak untuk mewujudkan mimpi kita.
+                        @lang('common.kata2')
                     </p>
                     <div class="text-center text-white">
                         <p class="text-lg md:text-2xl font-semibold">
-                            Julita Fahrul Rochim, M.Pd., M.Sc
+                           @lang('common.nama1')
                         </p>
                         <p class="text-lg md:text-2xl font-light">
-                            Dosen Prodi Bahasa Jepang
+                            @lang('common.dosen2')
                         </p>
                         <div class="mt-5 md:mt-10">
-                            <a href="" class="text-sm md:text-lg">Selengkapnya</a>
+                            <a href="" class="text-sm md:text-lg">@lang('common.readmore')</a>
                         </div>
                     </div>
                 </div>
@@ -622,10 +603,10 @@
         <div class="container">
             <div class="mb-4 text-center md:text-left">
                 <h1 class="text-2xl md:text-5xl mb-2 text-primary font-bold">
-                    Proyek dan Penelitian
+                    @lang('common.nama2')
                 </h1>
                 <p class="text-sm md:text-lg text-[#646464]">
-                    Proyek dan penelitian yang dilakukan oleh Mahasiswa dan Dosen Politeknik Takumi
+                    @lang('common.proyek')
                 </p>
             </div>
 
@@ -636,17 +617,16 @@
                         class="w-full h-full object-cover rounded-l-lg" />
                 </div>
                 <div class="py-4 px-5 md:px-5 text-[#646464]">
-                    <p class="text-sm md:text-base">Proyek Mahasiswa</p>
+                    <p class="text-sm md:text-base">@lang('common.nama3')</p>
                     <h1 class="text-xl md:text-2xl font-bold text-primary">
-                        Smartlock Door
+                       @lang('common.smart')
                     </h1>
-                    <p class="text-sm md:text-base">10 juni 2024</p>
+                    <p class="text-sm md:text-base">@lang('common.tanggal5')</p>
                     <p class="mt-4 text-sm md:text-base">
-                        Project Mahasiswa Teknologi Informasi dalam membuat pintu dengan keamanan otomatis dan kontrol
-                        Jarak Jauh, Project ini dikerjakan oleh Mahasiswa sebagai Leadernya dan dibimbing oleh Dosen.
+                       @lang('common.proyek2')
                     </p>
                     <div class="mt-4">
-                        <a href="" class="text-primary text-sm md:text-base">Baca Selengkapnya</a>
+                        <a href="" class="text-primary text-sm md:text-base">@lang('common.readmore')</a>
                     </div>
                 </div>
             </div>
@@ -658,17 +638,16 @@
                         alt="Proyek Dosen" class="w-full h-full object-cover rounded-l-lg" />
                 </div>
                 <div class="py-4 px-5 md:px-5 text-[#646464]">
-                    <p class="text-sm md:text-base">Proyek Dosen</p>
+                    <p class="text-sm md:text-base">@lang('common.puroyek')</p>
                     <h1 class="text-xl md:text-2xl font-bold text-primary">
-                        Digital Marketing
+                        @lang('common.digital')
                     </h1>
-                    <p class="text-sm md:text-base">15 Oktober 2024</p>
+                    <p class="text-sm md:text-base">@lang('common.tanggal6')</p>
                     <p class="mt-4 text-sm md:text-base">
-                        Project Dosen dan Mahasiswa yang melibatkan Mahasiswa 3 prodi sekaligus, Bisnis Digital, Bahasa
-                        Jepang dan Teknologi Informasi dalam dunia Digital Marketing
+                       @lang('common.proyek3')
                     </p>
                     <div class="mt-4">
-                        <a href="" class="text-primary text-sm md:text-base">Baca Selengkapnya</a>
+                        <a href="" class="text-primary text-sm md:text-base">@lang('common.readmore')</a>
                     </div>
                 </div>
             </div>
@@ -677,7 +656,7 @@
             <div class="mt-10 text-center">
                 <a href=""
                     class="bg-primary text-white px-8 py-2 rounded-3xl text-sm hover:outline hover:outline-primary hover:bg-transparent hover:text-primary inline-block hover:translate-y-1 transition-all duration-300">
-                    <span>Selengkapnya</span>
+                    <span>@lang('common.readmore')</span>
                     <i class='bx bx-chevron-right text-lg align-middle'></i>
                 </a>
             </div>
@@ -689,8 +668,8 @@
     {{-- Upcoming events --}}
     <div class="py-10">
         <div class="text-center mb-10">
-            <h1 class="text-4xl md:text-5xl font-bold text-primary mb-2">Acara Mendatang</h1>
-            <p class="description text-[#646464]">Acara yang akan datang di Politeknik Takumi</p>
+            <h1 class="text-4xl md:text-5xl font-bold text-primary mb-2">@lang('common.kongo')</h1>
+            <p class="description text-[#646464]">@lang('common.acara1')</p>
             {{-- <h1 class="text-4xl md:text-5xl font-bold text-white">@lang('common.kongo')</h1> --}}
         </div>
         <div class="container md:px-10">
@@ -699,43 +678,39 @@
                     <div class="relative">
                         <img src="{{ asset('assets/img-acara/training.png') }}" class="rounded-xl">
                         <div class="px-4 py-2 absolute -bottom-5 left-5 bg-primary text-white rounded-lg">
-                            <p class="text-base font-bold">23 Juli 2024</p>
+                            <p class="text-base font-bold">@lang('common.tanggal7')</p>
                         </div>
                     </div>
                     <div class="p-7">
                         <h1 class="text-xl font-bold text-black">@lang('common.Ti')</h1>
                         {{-- <p class="text-[#A9A9A9] text-md mb-2">@lang('common.hackathon1')</p> --}}
-                        <p class="text-black text-[14px]">PT. Bosch Rexroth mengadakan training pelatihan IoT di
-                            Politeknik Takumi</p>
+                        <p class="text-black text-[14px]">@lang('common.acara2')</p>
                     </div>
                 </div>
                 <div class="w-full h-auto bg-white rounded-xl shadow-xl">
                     <div class="relative">
                         <img src="{{ asset('assets/img-acara/vocational.png') }}" class="rounded-xl">
                         <div class="px-4 py-2 absolute -bottom-5 left-5 bg-primary text-white rounded-lg">
-                            <p class="text-base font-bold">19 Mei 2024</p>
+                            <p class="text-base font-bold">@lang('common.tanggal8')</p>
                         </div>
                     </div>
                     <div class="p-7">
                         <h1 class="text-xl font-bold text-black">@lang('common.hackathon3')</h1>
                         {{-- <p class="text-[#A9A9A9] text-md mb-2">@lang('common.hackathon4')</p> --}}
-                        <p class="text-black text-[14px]">Politeknik Takumi mengadakan acara bertajuk Vocational Campus
-                            Expo Competition yang dihadiri beberapa perwakilan sekolah dan umum.</p>
+                        <p class="text-black text-[14px]">@lang('common.acara3')</p>
                     </div>
                 </div>
                 <div class="w-full h-auto bg-white rounded-xl shadow-xl">
                     <div class="relative">
                         <img src="{{ asset('assets/img-acara/trialclass.jpg') }}" class="rounded-xl">
                         <div class="px-4 py-2 absolute -bottom-5 left-5 bg-primary text-white rounded-lg">
-                            <p class="text-base font-bold">4 Januari 2024</p>
+                            <p class="text-base font-bold">@lang('common.tanggal9')</p>
                         </div>
                     </div>
                     <div class="p-7">
-                        <h1 class="text-xl font-bold text-black">Trial Class Untuk SMA/SMK se-Cikarang</h1>
+                        <h1 class="text-xl font-bold text-black">@lang('common.proyek4')</h1>
                         {{-- <p class="text-[#A9A9A9] text-md mb-2">@lang('common.hackathon6')</p> --}}
-                        <p class="text-black text-[14px]">Politeknik Takumi mengadakan kegiatan Trial Class bagi
-                            anak-anak siswa SMA atau SMK kelas 3 yang ingin mengenal tentang Pendidikan traf kampus
-                            Vokasi.</p>
+                        <p class="text-black text-[14px]">@lang('common.acara4')</p>
                     </div>
                 </div>
             </div>
@@ -744,7 +719,7 @@
     <div class="mt-10 text-center">
         <a href=""
             class="bg-primary text-white px-8 py-2 rounded-3xl text-sm hover:outline hover:outline-primary hover:bg-transparent hover:text-primary inline-block hover:translate-y-1 transition-all duration-300">
-            <span>Selengkapnya</span>
+            <span>@lang('common.readmore')</span>
             <i class='bx bx-chevron-right text-lg align-middle'></i>
         </a>
     </div>
@@ -799,29 +774,28 @@
         <div class="container py-10">
             <div class="text-center mb-8">
                 <h1 class="text-5xl text-primary font-bold mb-2">
-                    Prestasi Mahasiswa
+                    @lang('common.prestasi')
                 </h1>
                 <p class="description text-[#646464]">
-                    Prestasi mahasiswa Politeknik Takumi
+                    @lang('common.takumy')
                 </p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Card 1 -->
                 <div class="w-full h-auto bg-white shadow-lg p-2 rounded-lg">
                     <p class="text-[#007DB1] text-center text-lg font-bold mb-4">
-                        Mahasiswa Semester 3
+                        @lang('common.smt3')
                     </p>
                     <img src="{{ asset('assets/img-prestasi/yansen.jpg') }}" alt=""
                         class="w-[140px] h-[140px] rounded-full object-cover mx-auto mb-4" />
                     <h1 class="text-lg font-semibold text-primary text-center mx-auto">
-                        Yansen Pratama
+                        @lang('common.yansen')
                     </h1>
                     <p class="text-[#646464] mb-4 text-center mx-auto">
-                        Bahasa Jepang
+                        @lang('common.Bj')
                     </p>
                     <p class="max-w-[280px] text-center mx-auto text-[#646464]">
-                        Juara 2
-                        Lomba Presentasi Bahasa Jepang Tingkat Jabodetabek Tahun 2024
+                       @lang('common.juara1')
 
                     </p>
                     <div class="flex justify-center gap-2 mt-4">
@@ -842,20 +816,18 @@
                 <!-- Card 1 -->
                 <div class="w-full h-auto bg-white shadow-lg p-2 rounded-lg">
                     <p class="text-[#007DB1] text-center text-lg font-bold mb-4">
-                        Mahasiswa Semester 3
+                        @lang('common.smt3')
                     </p>
                     <img src="{{ asset('assets/img-prestasi/Ridho.jpg') }}" alt=""
                         class="w-[140px] h-[140px] rounded-full object-cover mx-auto mb-4" />
                     <h1 class="text-lg font-semibold text-primary text-center mx-auto">
-                        Muhammad Ridho Yudiana
+                        @lang('common.ridho')
                     </h1>
                     <p class="text-[#646464] mb-4 text-center mx-auto">
-                        Teknologi Informasi
+                       @lang('common.Ti')
                     </p>
                     <p class="max-w-[280px] text-center mx-auto text-[#646464]">
-                        Juara 3
-                        Event Politeknik Indonusa
-
+                       @lang('common.juara2')
                     </p>
                     <div class="flex justify-center gap-2 mt-4">
                         <a href="">
@@ -875,19 +847,18 @@
                 <!-- Card 1 -->
                 <div class="w-full h-auto bg-white shadow-lg p-2 rounded-lg">
                     <p class="text-[#007DB1] text-center text-lg font-bold mb-4">
-                        Mahasiswa Semester 5
+                        @lang('common.smt5')
                     </p>
                     <img src="{{ asset('assets/img-prestasi/Euis.jpg') }}" alt=""
                         class="w-[140px] h-[140px] rounded-full object-cover mx-auto mb-4" />
                     <h1 class="text-lg font-semibold text-primary text-center mx-auto">
-                        Euis Yuniarti Yanuari
+                       @lang('common.euis')
                     </h1>
                     <p class="text-[#646464] mb-4 text-center mx-auto">
-                        Bahasa Jepang
+                        @lang('common.Bj')
                     </p>
                     <p class="max-w-[280px] text-center mx-auto text-[#646464]">
-                        Juara 1
-                        Event PBJ se-Jabodetabek
+                      @lang('common.juara3')
 
                     </p>
                     <div class="flex justify-center gap-2 mt-4">
@@ -909,7 +880,7 @@
             <div class="mt-10 text-center">
                 <a href=""
                     class="bg-primary text-white px-8 py-2 rounded-3xl text-sm hover:outline hover:outline-primary hover:bg-transparent hover:text-primary inline-block hover:translate-y-1 transition-all duration-300">
-                    <span>Selengkapnya</span>
+                    <span>@lang('common.readmore')</span>
                     <i class='bx bx-chevron-right text-lg align-middle'></i>
                 </a>
             </div>
@@ -949,9 +920,9 @@
     </div> --}}
     <div class="mt-10">
         <div class="text-center mb-5">
-            <h1 class="text-4xl md:text-5xl text-primary font-bold mb-2">Kehidupan kampus</h1>
+            <h1 class="text-4xl md:text-5xl text-primary font-bold mb-2">@lang('common.campuslife')</h1>
             <p class="description text-[#646464] text-sm md:text-base">
-                Kehidupan kampus Politeknik Takumi
+               @lang('common.campuslifer')
             </p>
         </div>
         <div class="container">
@@ -961,16 +932,15 @@
                         class="w-full h-auto md:h-[290px] object-cover rounded-t-lg" />
                     <div class="px-4 py-4 md:py-5">
                         <div class="flex justify-between items-center text-[#646464]">
-                            <p class="text-sm">Kegiatan Akademik</p>
+                            <p class="text-sm">@lang('common.akademi')</p>
                             <p class="text-sm flex items-center"><span><img src="{{ asset('assets/jam.svg') }}"
-                                        alt=""></span>20 Oktober 2024</p>
+                                        alt=""></span>@lang('common.tanggal10')</p>
                         </div>
                         <h1 class="text-2xl md:text-lg font-semibold">
-                            Dosen Praktisi Industri
+                            @lang('common.dosenpraktisi')
                         </h1>
                         <p class="mt-3 md:mt-4 text-xs md:text-sm text-[#646464]">
-                            Workshop ini ditujukan bagi mahasiswa dari berbagai jurusan yang ingin mempelajari
-                            dasar-dasar pemrograman Python. Melalui kegiatan ini, mahasiswa akan diajarkan...
+                            @lang('common.dosenpraktisi1')
                         </p>
                         <div class="mt-8 md:mt-10">
                             <a href=""
@@ -984,16 +954,15 @@
                         class="w-full h-auto md:h-[290px] object-cover rounded-t-lg" />
                     <div class="px-4 py-4 md:py-5">
                         <div class="flex justify-between items-center text-[#646464]">
-                            <p class="text-sm">Kegiatan Akademik</p>
+                            <p class="text-sm">@lang('common.akademi')</p>
                             <p class="text-sm flex items-center"><span><img src="{{ asset('assets/jam.svg') }}"
-                                        alt=""></span>20 Oktober 2024</p>
+                                        alt=""></span>@lang('common.tanggal11')</p>
                         </div>
                         <h1 class="text-2xl md:text-lg font-semibold">
-                            Event Kerjasama Takumi x Meta
+                           @lang('common.eventbersama')
                         </h1>
                         <p class="mt-3 md:mt-4 text-xs md:text-sm text-[#646464]">
-                            Kegiatan bakti sosial ini diselenggarakan oleh Badan Eksekutif Mahasiswa (BEM) Politeknik
-                            Takumi bekerja sama dengan Palang Merah Indonesia (PMI). Mahasiswa...
+                           @lang('common.eventbersama1')
                         </p>
                         <div class="mt-8 md:mt-10">
                             <a href=""
@@ -1007,16 +976,15 @@
                         class="w-full h-auto md:h-[290px] object-cover rounded-t-lg" />
                     <div class="px-4 py-4 md:py-5">
                         <div class="flex justify-between items-center text-[#646464]">
-                            <p class="text-sm">Kegiatan Akademik</p>
+                            <p class="text-sm">@lang('common.akademi')</p>
                             <p class="text-sm flex items-center"><span><img src="{{ asset('assets/jam.svg') }}"
-                                        alt=""></span>20 Oktober 2024</p>
+                                        alt=""></span>@lang('common.tanggal12')</p>
                         </div>
                         <h1 class="text-2xl md:text-lg font-semibold">
-                            Kuliah Umum Karir ke Jepang
+                           @lang('common.karirjepang')
                         </h1>
                         <p class="mt-3 md:mt-4 text-xs md:text-sm text-[#646464]">
-                            Turnamen futsal ini adalah acara tahunan yang diadakan untuk mempererat hubungan antar
-                            jurusan melalui olahraga. Setiap jurusan di Politeknik Takumi akan membentuk tim futs...
+                            @lang('common.karirjepang1')
                         </p>
                         <div class="mt-8 md:mt-10">
                             <a href=""
@@ -1041,8 +1009,7 @@
                 <div class="w-full h-auto">
                     <img src="{{ asset('assets/img-non-akademik/Foto 1 (2).JPG') }}" alt=""
                         class="w-full h-80 object-cover">
-                    <h1 class="py-3 font-semibold text-xl ">Uji Publik PPKS (Calon Panitia) Pencegahan dan Penanganan
-                        Kekerasan Sexual</h1>
+                    <h1 class="py-3 font-semibold text-xl ">@lang('common.ppks')</h1>
                     <p class="text-[#646464] mb-5">
                         @lang('common.hackathon19')
                     </p>
@@ -1055,7 +1022,7 @@
                 <div class="w-full h-auto ">
                     <img src="{{ asset('assets/img-non-akademik/Foto 2 (2).JPG ') }}" alt=""
                         class="w-full h-80 object-cover">
-                    <h1 class="py-3 font-semibold text-xl">Extrakurikuler Taishōgoto</h1>
+                    <h1 class="py-3 font-semibold text-xl">@lang('common.ekstra')</h1>
                     <p class="text-[#646464] mb-5">
                         @lang('common.hackathon21')
                     </p>
