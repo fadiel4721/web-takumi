@@ -168,7 +168,8 @@
 
             <!-- Right image column -->
             <div class="flex justify-center items-center">
-                <img src="{{ asset('assets/Pak Felix.png') }}" alt="" width="550" />
+                <img src="{{ asset('assets/Pak Feli.PNG') }}" alt="" width="550" />
+                
             </div>
         </div>
     </div>
