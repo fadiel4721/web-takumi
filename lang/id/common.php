@@ -114,7 +114,7 @@ return [
                         ternama.',
     'ekstra' => 'Ekstrakurikuler Taishōgoto',
     'ppks' => 'Uji Publik PPKS (Calon Panitia) Pencegahan dan Penanganan
-                        Kekerasan Sexual',
+                        Kekerasan Seksual',
     'kata2' => '  夢は見るものではなく、叶えるものだ (Yume wa miru mono de wa naku, kanaeru mono da)
                         "Mimpi bukanlah hanya untuk dilihat, tetapi untuk diwujudkan."
                         Artinya: Penting untuk bertindak untuk mewujudkan mimpi kita.',
