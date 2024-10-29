@@ -9,31 +9,32 @@
                 <div class="relative inline-block text-left">
                     <div class="flex items-center gap-2 cursor-pointer" onclick="toggleLanguageDropdown()">
                         <img id="currentFlag"
-                            src="{{ asset(session()->get('locale') == 'ja' ? 'assets/japan.png' : (session()->get('locale') == 'en' ? 'assets/england.png' : 'assets/indonesia.svg')) }}"
+                            src="{{ asset(session()->get('locale', 'id') == 'ja' ? 'assets/japan.png' : (session()->get('locale', 'id') == 'en' ? 'assets/england.png' : 'assets/indonesia.svg')) }}"
                             alt="Current Language Flag" class="w-6 h-6" />
                         <span
-                            id="currentLanguage">{{ session()->get('locale') == 'ja' ? '日本語' : (session()->get('locale') == 'en' ? 'English' : 'Bahasa Indonesia') }}</span>
+                            id="currentLanguage">{{ session()->get('locale', 'id') == 'ja' ? '日本語' : (session()->get('locale', 'id') == 'en' ? 'English' : 'Bahasa Indonesia') }}</span>
                         <i class="bx bx-chevron-down"></i>
                     </div>
                     <ul id="languageDropdown"
                         class="hidden absolute bg-white text-black py-2 mt-2 rounded shadow-lg z-50 min-w-[150px]">
-                        <li class="flex py-2 items-center gap-2 cursor-pointer px-4 {{ session()->get('locale') == 'en' ? 'bg-gray-200' : '' }}" "
+                        <li class="flex py-2 items-center gap-2 cursor-pointer px-4 {{ session()->get('locale', 'id') == 'en' ? 'bg-gray-200' : '' }}"
                             onclick="changeLanguage('en', 'English', 'assets/england.png')">
                             <img src="{{ asset('assets/england.png') }}" alt="English" class="w-6 h-6" />
                             <span>English</span>
                         </li>
-                        <li class="flex py-2 items-center gap-2 cursor-pointer px-4 {{ session()->get('locale') == 'id' ? 'bg-gray-200' : '' }}"
+                        <li class="flex py-2 items-center gap-2 cursor-pointer px-4 {{ session()->get('locale', 'id') == 'id' ? 'bg-gray-200' : '' }}"
                             onclick="changeLanguage('id', 'Bahasa Indonesia', 'assets/indonesia.svg')">
                             <img src="{{ asset('assets/indonesia.svg') }}" alt="Bahasa Indonesia" class="w-6 h-6" />
                             <span>Indonesia</span>
                         </li>
-                        <li class="flex py-2 items-center gap-2 cursor-pointer px-4 {{ session()->get('locale') == 'ja' ? 'bg-gray-200' : '' }}" "
+                        <li class="flex py-2 items-center gap-2 cursor-pointer px-4 {{ session()->get('locale', 'id') == 'ja' ? 'bg-gray-200' : '' }}"
                             onclick="changeLanguage('ja', '日本語', 'assets/japan.png')">
                             <img src="{{ asset('assets/japan.png') }}" alt="日本語" class="w-6 h-6" />
                             <span>日本語</span>
                         </li>
                     </ul>
                 </div>
+
             </div>
             <div class="hidden md:flex gap-6 items-center">
                 <a href="#" class="relative group"><span class="font-bold"></span> @lang('common.mahasiswa') <span
@@ -94,7 +95,7 @@
                         <div class="relative">
                             <div class="flex items-center gap-1 cursor-pointer"
                                 onclick="toggleDropdown('programDropdown')">
-                               @lang('common.prodi') <i class="bx bx-chevron-down"></i>
+                                @lang('common.prodi') <i class="bx bx-chevron-down"></i>
                             </div>
                             <ul id="programDropdown"
                                 class="hidden absolute bg-white text-black py-2 mt-2 rounded shadow-lg z-50 min-w-[200px]">
@@ -103,14 +104,16 @@
                                         class="block px-4 py-2 hover:bg-primary hover:text-white">@lang('common.Ti')</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">@lang('common.Bd')</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-primary hover:text-white">@lang('common.Bd')</a>
                                 </li>
                                 <li>
                                     <a href="#"
                                         class="block px-4 py-2 hover:bg-primary hover:text-white">@lang('common.Mk')</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">@lang('common.Bj')</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-primary hover:text-white">@lang('common.Bj')</a>
                                 </li>
                             </ul>
                         </div>
@@ -127,7 +130,7 @@
                     {{-- <li><a href="" class="relative group">@lang('common.pendaftaran')
                             
                         </a></li> --}}
-                    <li><a href=""
+                    <li><a href="https://pmb.takumi.ac.id/" target="_blank"
                             class="relative group bg-primary px-6 py-3 text-sm rounded-lg text-white">@lang('common.pendaftaran')
                         </a></li>
                     <li>
@@ -150,28 +153,32 @@
                     <ul id="programDropdown"
                         class="hidden absolute bg-white text-black py-2 mt-2 rounded shadow-lg z-50 min-w-[200px]">
                         <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">@lang('common.Ti')</a>
+                            <a href="#"
+                                class="block px-4 py-2 hover:bg-primary hover:text-white">@lang('common.Ti')</a>
                         </li>
                         <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">@lang('common.Bd')</a>
+                            <a href="#"
+                                class="block px-4 py-2 hover:bg-primary hover:text-white">@lang('common.Bd')</a>
                         </li>
                         <li>
                             <a href="#"
                                 class="block px-4 py-2 hover:bg-primary hover:text-white">@lang('common.Mk')</a>
                         </li>
                         <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">@lang('common.Bj')</a>
+                            <a href="#"
+                                class="block px-4 py-2 hover:bg-primary hover:text-white">@lang('common.Bj')</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="flex justify-center items-center p-5 border-b"><a href="#">@lang('common.penelitian')</a></div>
             <div class="flex justify-center items-center p-5 border-b"><a href="#">@lang('common.campuslife')</a></div>
-            <div class="flex justify-center items-center p-5 border-b"><a href="#">@lang('common.pendaftaran')</a></div>
+            <div class="flex justify-center items-center p-5 border-b"><a
+                    href="https://pmb.takumi.ac.id/">@lang('common.pendaftaran')</a></div>
             <div class="flex justify-center items-center p-5 border-b"><a href="#">@lang('common.profile')</a></div>
         </div>
         <div class="w-full pt-4">
-            <h1 class="font-bold text-lg text-center">Informasi:</h1>
+            <h1 class="font-bold text-lg text-center">@lang('common.informasi'):</h1>
             <div class="flex justify-center overflow-x-auto gap-10">
                 <ul class="flex items-center py-5 px-5">
                     <li class="mx-2"><a href="#" class="text-sm">@lang('common.mahasiswa')</a></li>
@@ -419,20 +426,13 @@
 </script>
 
 <script>
-    function toggleLanguageDropdown() {
-        const dropdown = document.getElementById('languageDropdown');
-        dropdown.classList.toggle('hidden');
-    }
-
     function changeLanguage(lang, language, flagSrc) {
-        // Set the current flag and language
         document.getElementById('currentFlag').src = flagSrc;
         document.getElementById('currentLanguage').innerText = language;
 
-        // Create a form to submit the language change
         const form = document.createElement('form');
-        form.method = 'GET'; // Ganti dengan POST jika perlu
-        form.action = "{{ route('changeLang') }}"; // Ganti dengan route yang sesuai
+        form.method = 'GET';
+        form.action = "{{ route('changeLang') }}";
 
         const langInput = document.createElement('input');
         langInput.type = 'hidden';
@@ -441,6 +441,6 @@
         form.appendChild(langInput);
 
         document.body.appendChild(form);
-        form.submit(); // Kirim form untuk mengganti bahasa
+        form.submit();
     }
 </script>
